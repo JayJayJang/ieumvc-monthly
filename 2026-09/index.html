@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IEUM Aesthetics &amp; Cosmeceutical Monthly — Issue 1 (September 2026)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&amp;family=IBM+Plex+Serif:wght@600&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Noto+Sans+KR:wght@400;600&amp;family=Noto+Serif+KR:wght@600&amp;display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07080d;--panel:#0e1119;--panel2:#131725;--line:#1f2637;--text:#e6e9f0;--muted:#9aa3b5;--teal:#20808D;--gold:#F2A900;--blue:#5AB0FF;--amber:#F2A900;--green:#3fc48a;--red:#ff5d5d}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:"IBM Plex Sans","Noto Sans KR","Noto Sans CJK KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;font-size:15px;line-height:1.6;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+a{color:var(--teal);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:900px;margin:0 auto;padding:24px 16px 64px}
+.toggle{position:sticky;top:0;z-index:5;background:rgba(7,8,13,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);padding:10px 16px;display:flex;justify-content:flex-end;gap:8px}
+.toggle button{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.08em;background:transparent;color:var(--muted);border:1px solid var(--line);padding:6px 14px;border-radius:999px;cursor:pointer}
+.toggle button.on{background:var(--teal);border-color:var(--teal);color:#fff}
+body.en .lang-kr{display:none}body.kr .lang-en{display:none}
+.masthead{border-bottom:2px solid var(--gold);padding:8px 0 20px;margin-bottom:28px}
+.brand{font-family:"IBM Plex Mono",monospace;color:var(--gold);letter-spacing:.2em;font-size:12px;text-transform:uppercase}
+.masthead h1{font-family:"IBM Plex Serif","Noto Serif KR","Noto Serif CJK KR",Georgia,serif;font-weight:600;font-size:32px;line-height:1.2;margin:8px 0 12px;color:#fff}
+.mast-meta{display:flex;flex-wrap:wrap;gap:6px 18px;font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--muted)}
+.sec{margin:0 0 36px}
+.sec h2{font-family:"IBM Plex Serif","Noto Serif KR","Noto Serif CJK KR",Georgia,serif;font-size:22px;font-weight:600;color:#fff;border-left:4px solid var(--teal);padding-left:12px;margin:0 0 16px;display:flex;align-items:center;gap:10px}
+.sec h2 .num{font-family:"IBM Plex Mono",monospace;font-size:13px;color:var(--gold);background:var(--panel2);border:1px solid var(--line);border-radius:6px;padding:2px 8px}
+.spotlight h2{border-left-color:var(--gold)}
+.radar{margin:0;padding-left:22px}.radar li{margin:0 0 14px}
+.radar-h{margin:0;font-weight:600;color:#fff}
+.why,.sowhat{color:var(--blue);margin:4px 0 0}
+.sw-label{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);border:1px solid rgba(90,176,255,.45);border-radius:4px;padding:1px 6px;margin-right:6px}
+.item{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:0 0 14px}
+.item h3{margin:6px 0 8px;font-size:17px;line-height:1.35;color:#fff;font-weight:600}
+.meta{display:flex;flex-wrap:wrap;gap:6px}
+.chip{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--muted);border:1px solid var(--line);background:var(--panel2);border-radius:999px;padding:2px 9px}
+.chip.prio{color:#fff}.chip.cat{color:var(--teal);border-color:rgba(32,128,141,.6)}.chip.date{color:var(--gold)}
+.fact{margin:0 0 10px;color:var(--text)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
+.note{font-size:13px;color:var(--muted);margin:6px 0 0;font-style:italic}
+.src{font-size:12px;color:var(--muted);margin:10px 0 0;font-family:"IBM Plex Mono",monospace;line-height:1.5}
+.src a{color:var(--teal)}
+sup.ref{font-size:10px;line-height:0}sup.ref a{color:var(--gold)}
+.commentary .box{background:rgba(90,176,255,.06);border:1px solid rgba(90,176,255,.45);border-radius:12px;padding:18px 22px;color:var(--blue)}
+.commentary .box h4{margin:0 0 8px;font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
+.commentary .box ol,.commentary .box ul{margin:0 0 16px;padding-left:22px}.commentary .box li{margin:0 0 8px}
+.commentary .box p{margin:0}
+.footer .disc,.footer .svc{font-size:13px;color:var(--muted)}
+.footer .svc{color:var(--text);border-left:3px solid var(--gold);padding-left:10px}
+.footer h4{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:18px 0 8px}
+.sources{font-size:12px;color:var(--muted);padding-left:0;list-style:none;font-family:"IBM Plex Mono",monospace;line-height:1.5}
+.sources li{margin:0 0 6px;word-break:break-all}
+.colophon{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--muted);margin-top:24px;border-top:1px solid var(--line);padding-top:12px}
+@media print{.toggle{display:none}.wrap{max-width:none;padding:0}.item,.sec{break-inside:avoid-page}body{font-size:12.5px}.masthead h1{font-size:26px}}
+</style>
+</head>
+<body class="en">
+<div class="toggle"><button data-lang="en" class="on">EN</button><button data-lang="kr">KR 한국어</button></div>
+<div class="wrap">
+<div class="lang-en">
+<header class="masthead">
+  <div class="brand">IEUM Value Creator</div>
+  <h1>IEUM Aesthetics &amp; Cosmeceutical Monthly</h1>
+  <div class="mast-meta">
+    <span>Issue No. 1</span>
+    <span>Coverage window: 2026-08-16 – 2026-09-15</span>
+    <span>Publication date: 2026-09-20</span>
+    <span>Prepared by IEUM Value Creator</span>
+  </div>
+</header>
+<section class="sec"><h2><span class="num">1</span>Executive Radar</h2><ol class="radar">
+<li><p class="radar-h">Korea’s cosmetics exports hit a record US$1.31B in August, +52.1% YoY.<sup class="ref"><a href="#src-1">[1]</a></sup></p><p class="why"><span class="sw-label">Why it matters</span> Growth is now led by the US and EU, not China; export planning should re-weight toward Western regulatory and channel readiness.</p></li>
+<li><p class="radar-h">Sephora enters TikTok Shop, Target opens a 600-store Beauty Studio, PROYA lands 400 Ulta doors.<sup class="ref"><a href="#src-2">[2]</a></sup><sup class="ref"><a href="#src-3">[3]</a></sup><sup class="ref"><a href="#src-4">[4]</a></sup></p><p class="why"><span class="sw-label">Why it matters</span> The US shelf is being re-allocated in one season; K-beauty brands now face C-beauty on the same prestige-skincare fixture and must choose channel tiers deliberately.</p></li>
+<li><p class="radar-h">Merz wins FDA approval for two Belotero fillers; under-eye HA fillers approved in both the US (RHA Redensity Eye) and China (Juvéderm Volbella).<sup class="ref"><a href="#src-5">[5]</a></sup><sup class="ref"><a href="#src-6">[6]</a></sup><sup class="ref"><a href="#src-7">[7]</a></sup></p><p class="why"><span class="sw-label">Why it matters</span> Indication-specific pivotal data is now the entry ticket for premium filler segments; Korean HA makers without US/China indication trials are being priced out of the label conversation.</p></li>
+<li><p class="radar-h">FDA states it issues no certificates or letters proving MoCRA registration — a request it links to TikTok Shop seller onboarding.<sup class="ref"><a href="#src-8">[8]</a></sup></p><p class="why"><span class="sw-label">Why it matters</span> “FDA-registered” cannot be documented by FDA and remains a claims risk; marketplaces will push the burden onto brands’ own records.</p></li>
+<li><p class="radar-h">Singapore’s HSA recalls two Medicube cream batches after detecting Sudan IV.<sup class="ref"><a href="#src-9">[9]</a></sup></p><p class="why"><span class="sw-label">Why it matters</span> First 2026 regulator action against a top-selling K-beauty SKU in ASEAN; colourant and batch-release testing become an export prerequisite, not a QC afterthought.</p></li>
+<li><p class="radar-h">Strategics buy ‘derma’ capability: Puig takes 100% of ISDIN, L’Oréal signs a co-development MoU with Cosmax and a fund stake in a Chinese CaHA filler maker.<sup class="ref"><a href="#src-10">[10]</a></sup><sup class="ref"><a href="#src-11">[11]</a></sup><sup class="ref"><a href="#src-12">[12]</a></sup></p><p class="why"><span class="sw-label">Why it matters</span> Dermatology-adjacent skincare and injectable-adjacent formulation are the assets commanding strategic capital; ODMs and clinic-channel brands are the targets.</p></li>
+<li><p class="radar-h">China’s NMPA moves bakuchiol and NMN into the open-access IECIC after their 3-year monitoring period.<sup class="ref"><a href="#src-13">[13]</a></sup></p><p class="why"><span class="sw-label">Why it matters</span> The China formulation window for retinol-alternative and ‘longevity’ actives opens to every notifier at once; first-mover exclusivity is gone, speed to notification matters.</p></li>
+</ol></section>
+<section class="sec" id="reg-en"><h2><span class="num">2</span>Regulatory &amp; Claims Watch</h2>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔴 High</span><span class="chip cat">REG</span><span class="chip date">2026-09-09</span></div>
+  <h3>FDA: no certificates exist for MoCRA registration or listing</h3>
+  <p class="fact">On 2026-09-09 FDA published a clarification that it does not provide certificates of registration, verification letters or exemption confirmations for cosmetic facility registration or product listing under MoCRA. FDA says inquiries rose because e-commerce platforms “such as TikTok Shop” ask sellers for proof of FDA registration or an FDA letter confirming exemption. Firms are directed to FDA’s registration and listing resources instead; registration is not an approval or a promotional tool.</p>
+  <div class="tags"><span class="chip">Bloc: US</span><span class="chip">Class: cosmetic (MoCRA)</span></div>
+  <p class="sowhat"><span class="sw-label">So what</span> Prepare a self-attestation pack (registration/listing confirmation screenshots, RP details) for marketplace onboarding, and strip “FDA-registered/approved” from all US-facing copy.</p>
+  
+  <p class="src">Source: <a href="https://www.fda.gov/cosmetics/cosmetics-news-events/fda-clarifies-it-does-not-provide-certificates-or-other-documents-verify-compliance-cosmetic-product" target="_blank" rel="noopener">[8] FDA, Cosmetics news, 2026-09-09</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔴 High</span><span class="chip cat">REG</span><span class="chip date">2026-08-19</span></div>
+  <h3>NMPA opens bakuchiol and NMN to all notifiers via IECIC</h3>
+  <p class="fact">NMPA’s fifth dynamic adjustment of the Inventory of Existing Cosmetic Ingredients (announced 2026-08-19) added four new ingredients that completed the three-year post-filing safety-monitoring period: azelaic acid monoamide propyl dimethylamine, cetyl diglyceryl tris(trimethylsiloxy)silylethyl dimethicone, β-nicotinamide mononucleotide (NMN) and bakuchiol. Ingredients in the IECIC can be used by any registrant or notifier without a new-ingredient filing, ending the original filers’ de-facto exclusivity.</p>
+  <div class="tags"><span class="chip">Bloc: CN</span><span class="chip">Class: ordinary cosmetic ingredient</span></div>
+  <p class="sowhat"><span class="sw-label">So what</span> Formulators can now notify bakuchiol or NMN products in China without a 3-year NCI cycle — re-open shelved China SKUs and check efficacy-claim evidence requirements before filing.</p>
+  
+  <p class="src">Source: <a href="https://www.ciopharma.com/supervise/68180" target="_blank" rel="noopener">[13] NMPA notice (reprint, CIO Pharma), 2026-08-19</a> · <a href="https://www.reach24h.com/cosmetic/industry-news/ingredients-catalog-added" target="_blank" rel="noopener">[14] REACH24H, IECIC addition analysis (secondary)</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔴 High</span><span class="chip cat">REG</span><span class="chip date">2026-08-26</span></div>
+  <h3>Singapore HSA recalls two Medicube cream batches over Sudan IV</h3>
+  <p class="fact">HSA ordered a retail-level Class 2 recall (dated 2026-08-26, published 2026-08-28) of two batches of Medicube PDRN Pink Collagen Capsule Cream imported by Venus Beauty Pte. Ltd. (batches 2E122I.2E117I and 2E191G.2E193G) after Sudan IV was detected. HSA had earlier suspended sales by three importers pending testing; samples from the other two importers tested negative per HSA’s test-results announcement. Class 2 denotes issues unlikely to cause serious adverse health outcomes.</p>
+  <div class="tags"><span class="chip">Bloc: SG</span><span class="chip">Class: cosmetic (ASEAN Cosmetic Directive)</span><span class="chip">Enforcement: Class 2 recall</span></div>
+  <p class="sowhat"><span class="sw-label">So what</span> Add prohibited-colourant screening (Sudan dyes) to batch-release COAs for any pink/red-tinted export SKU and keep importer-level traceability, since regulators act by importer and batch.</p>
+  
+  <p class="src">Source: <a href="https://www.hsa.gov.sg/announcements/medicube-pdrn-pink-collagen-capsule-cream--/" target="_blank" rel="noopener">[9] HSA Singapore, recall notice, 2026-08-26/28</a> · <a href="https://www.hsa.gov.sg/announcements/hsa-tests-product-samples-of-medicube-pdrn-pink-collagen-capsule-cream-for-presence-of-sudan-red-dyes/" target="_blank" rel="noopener">[15] HSA Singapore, test-results announcement</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔴 High</span><span class="chip cat">REG</span><span class="chip date">2026-09-09</span></div>
+  <h3>Indonesia mandates pre-shipment halal checks ahead of 17 October deadline</h3>
+  <p class="fact">BPJPH Regulation No. 4 of 2026 took effect on 2026-09-09: imported halal-certified products, including cosmetics, require a pre-shipment conformity check at the origin warehouse (documents, packaging/labelling, contamination risk) and a consignment-level Halal Product Assurance Report (LPPH) for customs clearance. On 2026-09-10 BPJPH named four qualified inspection bodies: PT Sucofindo, PT Surveyor Indonesia, PT Anindya Wiraputra Konsult and PT Mutu Agung Lestari. Mandatory halal certification for cosmetics applies from 2026-10-17.</p>
+  <div class="tags"><span class="chip">Bloc: ID</span><span class="chip">Class: cosmetic (halal-certified import)</span></div>
+  <p class="sowhat"><span class="sw-label">So what</span> Book an inspection body now and align Q4 shipping calendars to the LPPH step; without it, October consignments will not clear customs.</p>
+  <p class="note">Regulation text confirmed via a regulatory-intelligence summary; BPJPH’s deadline notice is the primary reference.</p>
+  <p class="src">Source: <a href="https://cosmetic.chemlinked.com/news/cosmetic-news/indonesia-bpjph-lists-4-bodies-for-halal-pre-shipment-checks" target="_blank" rel="noopener">[16] ChemLinked, BPJPH Reg. 4/2026 inspection bodies (secondary), 2026-09-10</a> · <a href="https://bpjph.halal.go.id/detail/bpjph-produk-kosmetik-wajib-bersertifikat-halal-pada-oktober-2026/" target="_blank" rel="noopener">[17] BPJPH Indonesia, halal cosmetics deadline notice</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🟡 Medium</span><span class="chip cat">REG</span><span class="chip date">2026-09-07</span></div>
+  <h3>MFDS convenes first global cosmetics regulators’ council in Seoul</h3>
+  <p class="fact">MFDS announced (2026-09-07) the creation of what it calls the world’s first council of cosmetics regulatory-agency heads, meeting in Seoul on 7–9 September. Press reports (secondary) count regulators from more than a dozen countries including Vietnam, Thailand, Indonesia, Malaysia, the Philippines, UAE, Brazil and Mexico, and say Korea was elected inaugural chair with a permanent secretariat in Korea, alongside bilateral outcomes such as simplified Vietnamese notification steps. MFDS’s own follow-up on the chair election is dated after this coverage window.</p>
+  <div class="tags"><span class="chip">Bloc: KR</span><span class="chip">Scope: regulatory cooperation</span></div>
+  <p class="sowhat"><span class="sw-label">So what</span> Regulatory-affairs teams should track the council’s bilateral outputs (Vietnam, Brazil, UAE) as the fastest route to lower notification friction in emerging markets.</p>
+  
+  <p class="src">Source: <a href="https://www.mfds.go.kr/brd/m_99/view.do?seq=50328" target="_blank" rel="noopener">[18] MFDS press release, 2026-09-07</a> · <a href="https://www.etoday.co.kr/news/view/2626381" target="_blank" rel="noopener">[19] 이투데이, GCORAS 의장국 선출 (secondary)</a></p>
+</article>
+</section>
+<section class="sec" id="sci-en"><h2><span class="num">3</span>Ingredient &amp; Science Brief</h2>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🟡 Medium</span><span class="chip cat">SCI</span><span class="chip date">2026-09-08</span></div>
+  <h3>Rohto: 3% dissolved azelaic acid serum matches 20% cream in acne</h3>
+  <p class="fact">Rohto reported a 12-week evaluator-blinded, randomized split-face trial (N=28, ages 18–39, mild-to-moderate acne; Feb–May 2026) comparing a 3% azelaic acid serum made with a non-neutralised solubilisation technology against a conventional 20% dispersed cream. Total lesion reduction at week 12 was comparable; the serum showed roughly 4× higher skin-penetration efficiency, fewer itch/irritation reports at week 2 (23.0-point higher itch-free rate) and equivalent anti-C. acnes activity; no product-related adverse events. Presented at the 44th Japanese Society of Cosmetic Dermatology on 2026-08-01; not peer-reviewed.</p>
+  <div class="tags"><span class="chip">Bloc: JP</span><span class="chip">Class: cosmetic ingredient (JP)</span><span class="chip">Evidence: split-face controlled RCT, company-run, N=28</span></div>
+  <p class="sowhat"><span class="sw-label">So what</span> Solubilisation, not concentration, is the differentiator to test — a low-dose AZA claim with a penetration-and-tolerance dataset is a credible ‘sensitive-acne’ position in Japan and Korea.</p>
+  
+  <p class="src">Source: <a href="https://www.rohto.co.jp/research/researchnews/technologyrelease/2026/0908_01" target="_blank" rel="noopener">[20] Rohto Pharmaceutical, technology release, 2026-09-08</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔵 Low</span><span class="chip cat">SCI</span><span class="chip date">2026-08-21</span></div>
+  <h3>Split-face RCT: 34G low-dead-space injector cuts toxin pain and waste</h3>
+  <p class="fact">A prospective, randomized, single-blind split-face trial (N=42, ages 18–65; Başkent University, Turkey) published in the Journal of Cosmetic Dermatology (2026;25(7), DOI 10.1111/jocd.71052; reported 2026-08-21) compared a 34-gauge low-dead-space injector with a 30-gauge insulin syringe for upper-face botulinum toxin. VAS pain was lower on the 34G side in every region (frontal 3.90 vs 5.66; glabellar 3.30 vs 5.07; periorbital 2.00 vs 3.33), no bruising occurred on the 34G side, and residual product averaged 0.0192 g vs 0.0539 g — about 2.8-fold more wastage with the standard syringe.</p>
+  <div class="tags"><span class="chip">Bloc: US/Global</span><span class="chip">Class: medical device (injector) / Rx drug (toxin)</span><span class="chip">Evidence: split-face RCT, peer-reviewed, N=42</span></div>
+  <p class="sowhat"><span class="sw-label">So what</span> Toxin marketers and device suppliers can quantify a per-vial economic message (fewer wasted units) alongside comfort — a rare claim that is both patient-facing and CFO-facing.</p>
+  
+  <p class="src">Source: <a href="https://doi.org/10.1111/jocd.71052" target="_blank" rel="noopener">[21] J Cosmet Dermatol 2026;25(7), DOI 10.1111/jocd.71052</a> · <a href="https://www.dermatologytimes.com/view/micro-gauge-needles-with-ldsi-improve-patient-comfort-and-reduce-botulinum-toxin-wastage" target="_blank" rel="noopener">[22] Dermatology Times, 2026-08-21 (secondary)</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔵 Low</span><span class="chip cat">SCI</span><span class="chip date">2026-09-09</span></div>
+  <h3>Amorepacific reports microbiome extract acting on post-acne pigmentation</h3>
+  <p class="fact">Amorepacific announced (2026-09-09) a paper in the International Journal of Molecular Sciences (online August 2026) on a culture extract of its proprietary strain Bacillus velezensis AmoreLumina, a high producer of moranoline. In in-vitro and ex-vivo human-skin models the extract suppressed melanogenic-enzyme expression and activated autophagy/lysosomal degradation of melanin in melanin-laden macrophages — framed as both preventing new pigment and clearing retained pigment. No human clinical data or commercialisation timeline was disclosed.</p>
+  <div class="tags"><span class="chip">Bloc: KR</span><span class="chip">Class: research-stage ingredient (not yet a 기능성 active)</span><span class="chip">Evidence: in-vitro / ex-vivo</span></div>
+  <p class="sowhat"><span class="sw-label">So what</span> Watch for a whitening 기능성화장품 dossier built on a ‘clear residual melanin’ mechanism; competitors’ PIH claims should be checked against this differentiated positioning before Korean launch.</p>
+  
+  <p class="src">Source: <a href="https://www.apgroup.com/int/ko/news/2026-09-09-1.html" target="_blank" rel="noopener">[23] Amorepacific newsroom, 2026-09-09</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🟡 Medium</span><span class="chip cat">SCI</span><span class="chip date">2026-09-01</span></div>
+  <h3>Beiersdorf launches Eucerin acne line with two live skin-native bacteria</h3>
+  <p class="fact">Beiersdorf announced (2026-09-01) Eucerin DERMOPURE CLINICAL PROBIOM8 for acne-prone skin, built on patented TopiC.A technology containing two viable, dormant skin-native bacterial strains intended to rebalance the microbiome rather than act as a broad antimicrobial. The release cites more than 120 proprietary microbiome studies since 2014 and sizes the global acne-prone skincare market at €4.6bn in 2025 (+8.8% CAGR 2020–25), but discloses no clinical trial design, N or endpoints for the product.</p>
+  <div class="tags"><span class="chip">Bloc: EU</span><span class="chip">Class: cosmetic (EU Reg. 1223/2009)</span><span class="chip">Evidence: marketing material — no trial disclosed</span></div>
+  <p class="sowhat"><span class="sw-label">So what</span> Live-bacteria ‘derma’ positioning is now mainstream at a top-3 European skincare house; Korean microbiome brands need preservation-compatible viability data and a substantiated claim file to compete on the same shelf.</p>
+  
+  <p class="src">Source: <a href="https://www.beiersdorf.com/newsroom/press-information/all-press-releases/2026/09/01-beiersdorf-strengthens-derma-business-with-microbiome-technology" target="_blank" rel="noopener">[24] Beiersdorf press release, 2026-09-01</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔵 Low</span><span class="chip cat">SCI</span><span class="chip date">2026-09-11</span></div>
+  <h3>Cosmax wins wrinkle-improvement functional approval for bakuchiol stick balm</h3>
+  <p class="fact">Cosmax announced (2026-09-11) MFDS approval of a solid-stick bakuchiol multi-balm as a wrinkle-improvement functional cosmetic (기능성화장품). Because bakuchiol is not a listed (고시) functional ingredient, the product went through individual review. Cosmax attributes the format to a wax-network structure that stabilises liquid bakuchiol at high load without sweating or breaking, positioned for daytime ‘slow-aging’ use given bakuchiol’s heat and light stability relative to retinol. Concentration and efficacy figures were not disclosed; client launches are expected within 2026 (secondary).</p>
+  <div class="tags"><span class="chip">Bloc: KR</span><span class="chip">Class: functional cosmetic 기능성화장품 (wrinkle)</span><span class="chip">Evidence: MFDS-reviewed dossier, data not public</span></div>
+  <p class="sowhat"><span class="sw-label">So what</span> Together with NMPA’s IECIC listing, bakuchiol now has a cleared path in both Korea (individual 기능성 review precedent) and China — brand teams can plan a Korea–China ‘retinol-alternative’ line without a bespoke ingredient dossier in China.</p>
+  
+  <p class="src">Source: <a href="https://www.cosmax.com/media/cosmax-obtained-functional-approval-for-bakuchiol-multi-balm/" target="_blank" rel="noopener">[25] Cosmax media, 2026-09-11</a> · <a href="https://www.cosinkorea.com/news/article.html?no=58287" target="_blank" rel="noopener">[26] 코스인, 코스맥스 바쿠치올 멀티밤 기능성 승인 (secondary)</a></p>
+</article>
+</section>
+<section class="sec" id="aes-en"><h2><span class="num">4</span>Medical Aesthetics Update</h2>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔴 High</span><span class="chip cat">AES</span><span class="chip date">2026-09-14</span></div>
+  <h3>FDA approves Merz’s Belotero Volume (+) and Intense (+) fillers</h3>
+  <p class="fact">Merz Aesthetics announced (2026-09-14) FDA approval of BELOTERO VOLUME (+) for midface volume and contour deficiency (adults ≥22) and BELOTERO INTENSE (+) for lip volume and fullness (adults ≥21); both are lidocaine-containing cohesive polydensified matrix HA gels. The release cites 95% patient satisfaction at 12 weeks and results up to 18 months for VOLUME (+), and 100% satisfaction with volume maintained up to 12 months for INTENSE (+); trial names, N and design are not given. US launches: VOLUME (+) on 2026-10-14, INTENSE (+) on 2026-12-01, completing a three-product US Belotero line with BALANCE (+).</p>
+  <div class="tags"><span class="chip">Bloc: US</span><span class="chip">Class: medical device, Class III (PMA)</span><span class="chip">Evidence: company-reported pivotal data, not yet published</span></div>
+  <p class="sowhat"><span class="sw-label">So what</span> The US midface and lip segments now have a fourth full-line HA competitor; Korean HA exporters targeting a US PMA should benchmark 12–18-month durability endpoints, not 6-month.</p>
+  
+  <p class="src">Source: <a href="https://www.businesswire.com/news/home/20260914841148/en/Merz-Aesthetics-Brings-Comprehensive-BELOTERO-Hyaluronic-Acid-Portfolio-to-U.S.-Market-with-FDA-Approvals-of-BELOTERO-VOLUME-and-BELOTERO-INTENSE-" target="_blank" rel="noopener">[5] Merz Aesthetics via Business Wire, 2026-09-14</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔴 High</span><span class="chip cat">AES</span><span class="chip date">2026-08-20</span></div>
+  <h3>Under-eye HA fillers approved in the US (RHA Redensity Eye) and China (Volbella)</h3>
+  <p class="fact">Revance and Teoxane announced (2026-08-20) FDA approval of RHA Redensity Eye (PMA supplement P170002/S050) for moderate-to-severe infraorbital volume deficiency in adults ≥22, supported by TEO-RHA-1902, a prospective, randomized, evaluator-blinded, multicenter, no-treatment-controlled study: 93% aesthetic improvement at 3 months, sustained to 12 months without touch-up, and no vascular occlusion, granuloma or delayed inflammatory events (N not stated). On 2026-09-10 NMPA approved a new indication for Juvéderm Volbella with lidocaine — moderate-to-severe infraorbital hollowing — on a Chinese Phase III (multicenter, randomized, evaluator-blinded, delayed-treatment control): 94.6% achieved ≥1-grade improvement at 3 months, investigator/subject GAIS response 99.1%/95.6%, effect maintained through 12 months (secondary report).</p>
+  <div class="tags"><span class="chip">Bloc: US · CN</span><span class="chip">Class: medical device, Class III (PMA / NMPA Class III)</span><span class="chip">Evidence: randomized evaluator-blinded controlled pivotal trials, company-reported</span></div>
+  <p class="sowhat"><span class="sw-label">So what</span> Tear-trough is now an on-label indication in the two largest markets; clinics will shift under-eye volume from off-label thin-HA use to labelled products, and any competing HA needs an infraorbital-specific safety dataset.</p>
+  
+  <p class="src">Source: <a href="https://www.prnewswire.com/news-releases/revance-and-teoxane-announce-the-fda-approval-of-rha-redensity-eye-for-undereye-hollowing-302855805.html" target="_blank" rel="noopener">[6] Revance / Teoxane via PR Newswire, 2026-08-20</a> · <a href="https://www.ymguancha.com/post/19622.html" target="_blank" rel="noopener">[7] 医美行业观察, Volbella China approval, 2026-09-10 (secondary)</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔴 High</span><span class="chip cat">AES</span><span class="chip date">2026-08-18</span></div>
+  <h3>Chong Kun Dang Bio’s CU-20101 toxin filed for China approval</h3>
+  <p class="fact">Chong Kun Dang Bio announced (2026-08-18) that Greater-China licensee Cutia Therapeutics (HKEX-listed; exclusive licence since 2022) submitted a marketing application to NMPA for CU-20101, a botulinum toxin type A. The supporting China Phase 3 (N=554) met non-inferiority versus Botox on glabellar-line improvement with a comparable safety profile, no serious treatment-related adverse events, and maintained efficacy on repeat dosing. Target China launch is H2 2027. Milestone economics were not disclosed (secondary reports of the company release).</p>
+  <div class="tags"><span class="chip">Bloc: KR · CN</span><span class="chip">Class: Rx biologic (botulinum toxin)</span><span class="chip">Evidence: Phase 3 non-inferiority RCT, N=554, company-reported</span></div>
+  <p class="sowhat"><span class="sw-label">So what</span> Another Korean-origin toxin enters China’s approval queue; Chinese distributors will negotiate on price and clinic reach, so partners should lock channel terms before approval.</p>
+  
+  <p class="src">Source: <a href="https://www.thebionews.net/news/articleView.html?idxno=27272" target="_blank" rel="noopener">[27] 더바이오, 종근당바이오 CU-20101 중국 허가신청, 2026-08-18 (secondary)</a> · <a href="https://www.etoday.co.kr/news/view/2615325" target="_blank" rel="noopener">[28] 이투데이, 종근당바이오 CU-20101 (secondary)</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🟡 Medium</span><span class="chip cat">AES</span><span class="chip date">2026-08-27</span></div>
+  <h3>Japan approves Botox Vista label extension for masseter prominence</h3>
+  <p class="fact">Allergan Aesthetics (AbbVie GK) announced on 2026-08-27 a partial-change approval adding masseter prominence (咬筋膨隆) in adults under 65 to the label of Botox Vista 50U, Japan’s first approved aesthetic toxin indication beyond glabellar and lateral-canthal lines. A clinic-authored summary of the revised package insert cites the domestic Phase III (jRCT2031230467): 90-day responder rates of 40.9% (48U) and 39.4% (72U) versus 0% for placebo, with response defined as ≥2-grade improvement on a 5-point severity scale. The company release could not be retrieved directly; details rest on secondary sources.</p>
+  <div class="tags"><span class="chip">Bloc: JP</span><span class="chip">Class: Rx drug (botulinum toxin type A)</span><span class="chip">Evidence: Phase III placebo-controlled RCT, per secondary summary</span></div>
+  <p class="sowhat"><span class="sw-label">So what</span> Japan’s large off-label ‘jaw Botox’ market now has an on-label option, raising the liability bar for clinics using unapproved imported toxins — Korean toxin makers should reassess Japan pricing and registration timing.</p>
+  <p class="note">Confidence: approval and indication corroborated by two secondary sources; efficacy figures come from a clinic’s summary of the package insert and are not independently verified.</p>
+  <p class="src">Source: <a href="https://almond.clinic/column/botox/17143/" target="_blank" rel="noopener">[29] Almond Clinic column citing Allergan Aesthetics Japan approval (secondary)</a> · <a href="https://bio.nikkeibp.co.jp/atcl/release/26/08/27/28673/" target="_blank" rel="noopener">[30] Allergan Aesthetics Japan release, hosted by Nikkei BP, 2026-08-27</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔴 High</span><span class="chip cat">AES</span><span class="chip date">2026-09-02</span></div>
+  <h3>RZL-012 injectable lipolytic meets all endpoints in China Phase 3</h3>
+  <p class="fact">Raziel Therapeutics and Fosun Pharma (via JuveStar) announced (2026-09-02) positive results from a randomized, placebo-controlled Phase 3 registration trial of RZL-012 for submental fat in China: N=480 (360 active / 120 placebo), single treatment cycle, primary responder-rate endpoint at day 84 met with a 30-percentage-point advantage over placebo; all secondary efficacy and safety endpoints met. Fosun plans a China NDA submission by end-2026 and is preparing a follow-on body-contouring trial. Detailed safety data were not specified in the release.</p>
+  <div class="tags"><span class="chip">Bloc: CN</span><span class="chip">Class: Rx drug (NDA pathway)</span><span class="chip">Evidence: Phase 3 placebo-controlled RCT, N=480, company-reported</span></div>
+  <p class="sowhat"><span class="sw-label">So what</span> Non-surgical fat reduction in China is moving from deoxycholic acid to next-generation lipolytics; energy-based body-contouring vendors should prepare head-to-head economics against a one-to-two-session injectable.</p>
+  
+  <p class="src">Source: <a href="https://www.prnewswire.com/news-releases/raziel-therapeutics-and-fosun-pharma-announce-positive-phase-3-results-for-rzl-012-in-submental-fat-reduction-clearing-the-path-to-a-china-nda-filing-302867570.html" target="_blank" rel="noopener">[31] Raziel Therapeutics / Fosun Pharma via PR Newswire, 2026-09-02</a></p>
+</article>
+</section>
+<section class="sec" id="deal-en"><h2><span class="num">5</span>Deals, Capital &amp; Corporate</h2>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔴 High</span><span class="chip cat">DEAL</span><span class="chip date">2026-09-14</span></div>
+  <h3>Puig to take full ownership of dermocosmetic ISDIN for €1.2bn</h3>
+  <p class="fact">Puig announced (2026-09-14) an agreement to acquire CQFE (Esteve)’s 50% stake in ISDIN, the Barcelona dermocosmetics and photoprotection company the two groups have co-owned since 1990. Consideration, per secondary reporting, is €1.2bn structured as €900m at closing plus €300m deferred to Q1 2029, with closing expected by end-Q1 2027 subject to approvals; no earn-out disclosed. Puig’s Executive Chairman called expanding dermocosmetics “a strategic priority”.</p>
+  <div class="tags"><span class="chip">Bloc: EU</span><span class="chip">Class: cosmetic (EU Reg. 1223/2009)</span><span class="chip">Structure: €900m closing + €300m deferred (secondary)</span></div>
+  <p class="sowhat"><span class="sw-label">So what</span> A fragrance-led group paying full control for a pharmacy-channel sunscreen house is the clearest read on where prestige groups see durable margin; K-derma brands with pharmacy or clinic distribution have a fresh valuation comp.</p>
+  
+  <p class="src">Source: <a href="https://www.puig.com/en/newsroom/new-chapter-for-isdin-puig-to-assume-full-ownership/" target="_blank" rel="noopener">[10] Puig newsroom, 2026-09-14</a> · <a href="https://www.globalcosmeticsnews.com/puig-takes-full-ownership-of-isdin-in-e1-2-billion-deal/" target="_blank" rel="noopener">[32] Global Cosmetics News, Puig–ISDIN terms (secondary)</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔴 High</span><span class="chip cat">DEAL</span><span class="chip date">2026-09-08</span></div>
+  <h3>L’Oréal and Cosmax sign co-development MoU in Paris</h3>
+  <p class="fact">L’Oréal Groupe and Cosmax signed an MoU on 2026-09-08 (announced 2026-09-09) at the France–Korea 140th-anniversary summit, one of three business MoUs signed there. Scope: joint R&amp;D of K-beauty-inspired products for global markets; exploration of cosmetic raw materials and active ingredients; and new sensory signatures and formats inspired by Korean beauty trends. Signatories were CEO Nicolas Hieronimus and Vice Chairman Choi Kyoung; no financial terms were disclosed. L’Oréal cites more than 30 years of partnerships with Korean companies.</p>
+  <div class="tags"><span class="chip">Bloc: EU · KR</span><span class="chip">Structure: MoU, no financial terms</span></div>
+  <p class="sowhat"><span class="sw-label">So what</span> Korean ODM formulation is being formalised as an innovation source for the world’s largest beauty group; independent Korean brands should expect faster global copies of K-textures and compete on clinical substantiation rather than format alone.</p>
+  
+  <p class="src">Source: <a href="https://www.loreal.com/en/news/group/l-oreal-groupe-and-cosmax-sign-memorandum-of-understanding-to-collaborate-on-next-generation-beauty-innovations/" target="_blank" rel="noopener">[11] L'Oréal Groupe newsroom, 2026-09-09</a> · <a href="https://www.cosmax.com/media/cosmax-loreal-group-mou-2026/" target="_blank" rel="noopener">[33] Cosmax media, 2026-09-08</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔴 High</span><span class="chip cat">DEAL</span><span class="chip date">2026-08-18</span></div>
+  <h3>CVC invests in K-beauty distributor Silicon2 at US$2.1bn enterprise value</h3>
+  <p class="fact">CVC Asia announced (2026-08-18) the acquisition of approximately 9% of Silicon2 through a primary issuance of redeemable convertible shares at an enterprise value of about US$2.1bn; Korean press reports the primary amount as ₩300bn (about US$215–220m). No milestones or secondary component were disclosed. Silicon2 (founded 2002; StyleKorean wholesale platform) distributes more than 600 brands to over 3,300 customers in 177 countries, naming Boots, Sephora, Ulta, Rossmann, Superdrug and iHerb among retail partners. Proceeds are earmarked for global expansion, supply-chain optimisation and professionalisation.</p>
+  <div class="tags"><span class="chip">Bloc: KR · Global</span><span class="chip">Structure: ~9% primary, redeemable convertible shares, EV ~US$2.1bn</span></div>
+  <p class="sowhat"><span class="sw-label">So what</span> A PE-capitalised wholesaler now sits between Korean brands and Western retail; brands should renegotiate exclusivity and data-sharing terms before the distributor’s scale, not the brand’s, sets the shelf.</p>
+  
+  <p class="src">Source: <a href="https://www.cvc.com/media/news/2026/cvc-asia-invests-in-leading-global-distributor-of-k-beauty-products-silicon2/" target="_blank" rel="noopener">[34] CVC Capital Partners, 2026-08-18</a> · <a href="https://en.sedaily.com/news/2026/08/18/silicon2-draws-220-million-from-cvc-capital-to-speed-global" target="_blank" rel="noopener">[35] Seoul Economic Daily (EN), 2026-08-18 (secondary)</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🟡 Medium</span><span class="chip cat">DEAL</span><span class="chip date">2026-09-08</span></div>
+  <h3>L’Oréal-affiliated fund takes 3.5% of Chinese CaHA filler maker Moreyang</h3>
+  <p class="fact">Trade press reported (2026-09-08) that the L’Oréal-affiliated Cathay Creative Beauty fund completed a strategic investment for a 3.5% stake in Shanghai Moreyang Biologics; consideration was not disclosed. Moreyang’s Aphranel calcium-hydroxyapatite microsphere filler holds an NMPA Class III registration described as China’s first domestically developed CaHA facial soft-tissue filler indication, with about 150,000 units sold in its first year across 28 provinces and 620+ compliant institutions; the company is reported profitable in 2025. It is the fund’s third investment since March 2025, after a skincare brand and a pharmaceutical company.</p>
+  <div class="tags"><span class="chip">Bloc: CN</span><span class="chip">Class: medical device, NMPA Class III</span><span class="chip">Structure: 3.5% minority, undisclosed value (single trade source)</span></div>
+  <p class="sowhat"><span class="sw-label">So what</span> The largest skincare group is buying a seat at the injectable table in China; Korean biostimulator exporters should expect skincare-plus-injectable protocol bundling as the next competitive frontier in Chinese clinics.</p>
+  <p class="note">Reported by a single Chinese trade outlet; no company announcement located.</p>
+  <p class="src">Source: <a href="https://www.ymguancha.com/post/19617.html" target="_blank" rel="noopener">[12] 医美行业观察, 末央生物 investment, 2026-09-08 (secondary)</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🟡 Medium</span><span class="chip cat">DEAL</span><span class="chip date">2026-09-07</span></div>
+  <h3>MBK Partners buys 40% of AXIS-Y at ₩430bn valuation</h3>
+  <p class="fact">AXIS-Y announced (2026-09-07) that MBK Partners is investing approximately ₩172bn for a 40% stake at a valuation of about ₩430bn; the founder retains 60% and management control, and the company characterises the deal as a minority investment, not an exit. More than 90% of revenue is generated outside Korea across about 100 countries; the hero Dark Spot Correcting Glow Serum has sold more than 20 million units. Proceeds target distribution expansion, category expansion (haircare, devices), AI/data and talent.</p>
+  <div class="tags"><span class="chip">Bloc: KR</span><span class="chip">Class: cosmetic</span><span class="chip">Structure: 40% minority, ~₩172bn, no milestones disclosed</span></div>
+  <p class="sowhat"><span class="sw-label">So what</span> Export-led K-beauty DTC brands now clear PE valuation thresholds on hero-SKU economics; founders should document unit economics per hero product before approaching capital.</p>
+  
+  <p class="src">Source: <a href="https://www.prnewswire.com/news-releases/built-beyond-trends-global-k-beauty-brand-axis-y-enters-its-next-growth-chapter-with-mbk-partners-at-a-krw-430-billion-valuation-302871290.html" target="_blank" rel="noopener">[36] AXIS-Y via PR Newswire, 2026-09-07</a></p>
+</article>
+</section>
+<section class="sec" id="mkt-en"><h2><span class="num">6</span>Market &amp; Channel Signals</h2>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔴 High</span><span class="chip cat">MKT</span><span class="chip date">2026-09-01</span></div>
+  <h3>Korea’s August cosmetics exports reach record US$1.31bn, +52.1%</h3>
+  <p class="fact">MOTIE’s August 2026 trade release (2026-09-01) reports cosmetics exports of US$1.31bn, up 52.1% year on year, within total exports of US$98.25bn (+68.7%). Trade-press tabulation of customs data for 1–25 August (secondary) shows the US at US$230m (+58.0%), the EU at US$130m (+106.6%), China at US$120m (+5.3%) and the CIS at US$60m (+25.9%).</p>
+  <div class="tags"><span class="chip">Bloc: KR</span><span class="chip">Data: government trade statistics</span></div>
+  <p class="sowhat"><span class="sw-label">So what</span> China is now a low-single-digit growth market for Korean exporters while the EU doubled; resource allocation for regulatory dossiers (CPNP, UK SCPN) should move ahead of China NMPA filings.</p>
+  
+  <p class="src">Source: <a href="https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172145/view" target="_blank" rel="noopener">[1] MOTIE, 2026년 8월 수출입동향 (2026-09-01)</a> · <a href="https://www.cosinkorea.com/news/article.html?no=58205" target="_blank" rel="noopener">[37] 코스인, 8월 화장품 수출 지역별 집계 (secondary)</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔴 High</span><span class="chip cat">MKT</span><span class="chip date">2026-08-31</span></div>
+  <h3>Olive Young foreign-customer sales pass ₩1tn by August; derma +78%</h3>
+  <p class="fact">CJ Olive Young reported (2026-08-31) that offline sales to foreign customers exceeded ₩1tn for January–August 2026, three months earlier than in 2025, up 47% year on year on 11.01 million transactions from 192 nationalities (top five: US, Singapore, Japan, China, Thailand). Foreigners now account for 33% of offline sales (2% in 2022); baskets average six items and 35% of buyers spend over ₩100,000. Derma skincare sales to foreign customers rose about 78%.</p>
+  <div class="tags"><span class="chip">Bloc: KR</span><span class="chip">Data: company-reported</span></div>
+  <p class="sowhat"><span class="sw-label">So what</span> Olive Young is the world’s largest K-derma sampling venue; brands should treat in-store foreign conversion data as the leading indicator for which SKUs to push into US and SEA retail.</p>
+  
+  <p class="src">Source: <a href="https://corp.oliveyoung.com/ko/news/155?pg=1&amp;category=" target="_blank" rel="noopener">[38] CJ Olive Young newsroom, 2026-08-31</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔴 High</span><span class="chip cat">MKT</span><span class="chip date">2026-09-02</span></div>
+  <h3>Sephora launches TikTok Shop pilot with monthly exclusive drops</h3>
+  <p class="fact">Sephora announced (2026-09-02) a US TikTok Shop pilot starting 2026-09-19: monthly “Sephora Drop Shop” activations with creator content and TikTok LIVE events, selling curated partner-brand products exclusively on TikTok Shop during each drop window, with select items later rolling to Sephora.com, selected stores or other retail partners. Purchases complete in TikTok Shop checkout. Sephora cites more than one billion beauty-related searches on TikTok each month.</p>
+  <div class="tags"><span class="chip">Bloc: US</span><span class="chip">Channel: social commerce</span></div>
+  <p class="sowhat"><span class="sw-label">So what</span> Prestige retail has accepted TikTok Shop as a launch channel; brands negotiating US exclusivity must now decide whether Sephora’s drop window or their own TikTok Shop storefront owns the first-30-days data.</p>
+  
+  <p class="src">Source: <a href="https://newsroom.sephora.com/sephora-launches-on-tiktok-shop-bringing-a-new-beauty-shopping-experience-to-u-s-customers-with-its-sephora-drop-shop/" target="_blank" rel="noopener">[2] Sephora newsroom, 2026-09-02</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔴 High</span><span class="chip cat">MKT</span><span class="chip date">2026-08-19</span></div>
+  <h3>PROYA to enter 400 Ulta stores in November — first C-beauty prestige skincare</h3>
+  <p class="fact">PROYA announced (2026-08-19) a partnership with Ulta Beauty to launch in November 2026 across 400 Ulta stores and Ulta.com with two lines: the Advanced Firming Collection (peptide–retinol) and the Original Repair Collection (barrier-repair and collagen-support essence). PROYA’s overseas head framed the move as a shift from export to global brand-building and a replicable model for Western Europe.</p>
+  <div class="tags"><span class="chip">Bloc: US</span><span class="chip">Class: cosmetic</span></div>
+  <p class="sowhat"><span class="sw-label">So what</span> The ‘efficacy without barrier compromise’ shelf that K-derma built at Ulta now has a Chinese occupant at scale; Korean brands should sharpen clinical proof points and price architecture before the November reset.</p>
+  
+  <p class="src">Source: <a href="https://www.tradingview.com/news/prnewswire:8520a832ffd99:0-proya-partners-with-ulta-beauty-joining-the-retailer-s-prestige-skincare-portfolio-later-this-year/" target="_blank" rel="noopener">[4] PROYA press release via PR Newswire, 2026-08-19</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🟡 Medium</span><span class="chip cat">MKT</span><span class="chip date">2026-09-10</span></div>
+  <h3>Target opens Beauty Studio in 600+ stores; two K-beauty brands debut</h3>
+  <p class="fact">Target launched Target Beauty Studio on 2026-09-10 in more than 600 stores and online, featuring 90 prestige, emerging and global brands across makeup, skincare, haircare and fragrance, many available at Target for the first time. The same day, Korean brands SUNGBOON EDITOR (29 skincare SKUs) and Milk Touch (39 SKUs) announced their launch in Beauty Studio via distributor Olive International.</p>
+  <div class="tags"><span class="chip">Bloc: US</span><span class="chip">Channel: mass-prestige shop-in-shop</span></div>
+  <p class="sowhat"><span class="sw-label">So what</span> A second US mass-prestige beauty fixture is open to Korean indie brands; the K-beauty pitch to Target must differ from the Ulta/Sephora one — value-tier diffusion lines rather than hero prestige SKUs.</p>
+  
+  <p class="src">Source: <a href="https://corporate.target.com/news-features/article/2026/08/target-beauty-studio" target="_blank" rel="noopener">[3] Target corporate newsroom, 2026-09-10</a> · <a href="https://www.prnewswire.com/news-releases/sungboon-editor-and-milk-touch-bring-next-generation-k-beauty-to-target-beauty-studio-302877479.html" target="_blank" rel="noopener">[39] Sungboon Editor / Milk Touch, PR Newswire, 2026-09-10</a></p>
+</article>
+</section>
+<section class="sec spotlight"><h2><span class="num">★</span>Spotlight — The US shelf reshuffle: where K-beauty sits after September</h2>
+<article class="item"><p class="fact">Five separate announcements inside one coverage window redrew the US beauty shelf. Sephora will run monthly exclusive drops on TikTok Shop from 2026-09-19 <sup class="ref"><a href="#src-2">[2]</a></sup>; Target opened a 600-store Beauty Studio carrying 90 brands and two Korean debutants <sup class="ref"><a href="#src-3">[3]</a></sup><sup class="ref"><a href="#src-39">[39]</a></sup>; Ulta gave PROYA, China’s largest domestic beauty company, 400 doors from November <sup class="ref"><a href="#src-4">[4]</a></sup>; Sephora’s Olive Young curation of 19 Korean brands reached more than 500 US Sephora stores on 2026-08-20 (announced 2026-08-05, secondary) <sup class="ref"><a href="#src-40">[40]</a></sup>; and CVC capitalised Silicon2, the wholesaler behind much of that K-beauty supply, at a US$2.1bn enterprise value <sup class="ref"><a href="#src-34">[34]</a></sup>. The Estée Lauder Companies, meanwhile, reported 13 brands live on Amazon in 11 markets and 12 brands on TikTok Shop in 9 markets, with skin care at US$7.34bn of FY2026 sales <sup class="ref"><a href="#src-41">[41]</a></sup>, and Ulta’s Q2 mix showed skincare and wellness at 24% of sales, down one point <sup class="ref"><a href="#src-42">[42]</a></sup>.</p><p class="fact">The demand backdrop is strong: Korean cosmetics exports to the US were up 58% for 1–25 August (secondary customs tabulation) <sup class="ref"><a href="#src-37">[37]</a></sup>, and Olive Young says foreign shoppers’ derma purchases rose about 78% <sup class="ref"><a href="#src-38">[38]</a></sup>. The pressure is on positioning, not volume. Three fixtures now compete for the same ‘clinical-but-gentle’ skincare story — Ulta (now with PROYA), Sephora (Olive Young edit) and Target (indie K-beauty via distributors) — and one social channel (TikTok Shop) sits above all three as the launch venue.</p><div class="tags"><span class="chip">Bloc: US</span><span class="chip">Class: cosmetic</span><span class="chip">Evidence: company releases + government/customs statistics</span></div><p class="sowhat read">IEUM’s read: the US market is sorting K-beauty into channel tiers — prestige-clinical (Sephora/Ulta), mass-prestige (Target) and social-first (TikTok Shop) — and a brand that lets its distributor choose the tier will be priced by the distributor. IEUM expects the November Ulta reset, with PROYA on shelf, to be the first direct C-beauty versus K-beauty test on US prestige skincare; brands with peer-reviewed or instrumented clinical data on their hero SKU will hold price, and brands competing on texture and price alone will be pushed toward Target-tier diffusion lines. For R&amp;D: fund one hero-SKU clinical per year, designed to the claim you need in the US (tolerance, barrier, post-procedure). For marketing: decide the tier and the first-30-days channel before signing any exclusivity, and treat TikTok Shop as a data channel, not a clearance channel.</p><p class="src">Sources: <a href="https://newsroom.sephora.com/sephora-launches-on-tiktok-shop-bringing-a-new-beauty-shopping-experience-to-u-s-customers-with-its-sephora-drop-shop/" target="_blank" rel="noopener">[2] Sephora newsroom, 2026-09-02</a> · <a href="https://corporate.target.com/news-features/article/2026/08/target-beauty-studio" target="_blank" rel="noopener">[3] Target corporate newsroom, 2026-09-10</a> · <a href="https://www.prnewswire.com/news-releases/sungboon-editor-and-milk-touch-bring-next-generation-k-beauty-to-target-beauty-studio-302877479.html" target="_blank" rel="noopener">[39] Sungboon Editor / Milk Touch, PR Newswire, 2026-09-10</a> · <a href="https://www.tradingview.com/news/prnewswire:8520a832ffd99:0-proya-partners-with-ulta-beauty-joining-the-retailer-s-prestige-skincare-portfolio-later-this-year/" target="_blank" rel="noopener">[4] PROYA press release via PR Newswire, 2026-08-19</a> · <a href="https://cosmeticsbusiness.com/sephora-olive-young-strategic-k-beauty-partnership-debut" target="_blank" rel="noopener">[40] Cosmetics Business, Sephora × Olive Young US debut (secondary)</a> · <a href="https://www.cvc.com/media/news/2026/cvc-asia-invests-in-leading-global-distributor-of-k-beauty-products-silicon2/" target="_blank" rel="noopener">[34] CVC Capital Partners, 2026-08-18</a> · <a href="https://www.elcompanies.com/en/news-and-media/newsroom/press-releases/2026/08-19-2026-110037466" target="_blank" rel="noopener">[41] The Estée Lauder Companies, FY2026 results, 2026-08-19</a> · <a href="https://www.ulta.com/investor/news-events/press-releases/detail/234/ulta-beauty-announces-second-quarter-fiscal-2026-results" target="_blank" rel="noopener">[42] Ulta Beauty, Q2 FY2026 results, 2026-08-27</a> · <a href="https://www.cosinkorea.com/news/article.html?no=58205" target="_blank" rel="noopener">[37] 코스인, 8월 화장품 수출 지역별 집계 (secondary)</a> · <a href="https://corp.oliveyoung.com/ko/news/155?pg=1&amp;category=" target="_blank" rel="noopener">[38] CJ Olive Young newsroom, 2026-08-31</a> · <a href="https://corp.oliveyoung.com/ko/news/153?pg=1&amp;category=" target="_blank" rel="noopener">[43] CJ Olive Young newsroom, 2026-08-18</a></p></article></section>
+<section class="sec" id="play-en"><h2><span class="num">7</span>Marketing Playbook</h2>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔵 Low</span><span class="chip cat">PLAY</span><span class="chip date">2026-09-13</span></div>
+  <h3>Case: Estée Lauder operationalises ‘generative engine optimisation’ across 20+ brands</h3>
+  <p class="fact">The Estée Lauder Companies announced (2026-09-13) a partnership with Profound, an AI-visibility platform used by 16% of the Fortune 500, to monitor and optimise how its brands (Estée Lauder, Clinique, M·A·C, La Mer, TOM FORD and others) appear in answers from generative AI assistants such as ChatGPT and Gemini, across roughly 150 countries and territories. ELC describes itself as the first in prestige beauty to deploy the capability globally across its full portfolio; its Chief Digital &amp; Marketing Officer said “the way people discover beauty is being rewritten in real time.”</p>
+  <div class="tags"><span class="chip">Bloc: US/Global</span><span class="chip">Lesson: AI answer engines as a discovery channel</span></div>
+  <p class="sowhat"><span class="sw-label">So what</span> AI assistants surface the claims that are documented, consistent and substantiated across the web — so claims discipline (the same file regulators want) is now also the marketing input; audit how your hero SKU is described by three AI assistants this month and fix the source pages, not the ads.</p>
+  
+  <p class="src">Source: <a href="https://www.businesswire.com/news/home/20260913741575/en/The-Este-Lauder-Companies-Announces-Partnership-with-Profound-to-Expand-AI-Visibility-Across-Its-Global-Brand-Portfolio" target="_blank" rel="noopener">[44] The Estée Lauder Companies via Business Wire, 2026-09-13</a></p>
+</article>
+</section>
+<section class="sec commentary"><h2><span class="num">8</span>IEUM Commentary</h2>
+<div class="box">
+<h4>IEUM’s read — cross-sector patterns</h4><ol><li>‘Derma’ is the asset strategics are paying for. Puig bought full control of ISDIN <sup class="ref"><a href="#src-10">[10]</a></sup><sup class="ref"><a href="#src-32">[32]</a></sup>; L’Oréal formalised Cosmax as a co-development partner <sup class="ref"><a href="#src-11">[11]</a></sup> and, through an affiliated fund, took a stake in a Chinese injectable maker <sup class="ref"><a href="#src-12">[12]</a></sup>; Olive Young’s foreign derma sales rose 78% <sup class="ref"><a href="#src-38">[38]</a></sup>. IEUM’s read: the valuation premium sits with brands and ODMs that can prove clinical tolerance and sit near a clinic or pharmacy.</li><li>Indication-specific data is now table stakes in fillers. In one month the US approved midface, lip and under-eye HA products <sup class="ref"><a href="#src-5">[5]</a></sup><sup class="ref"><a href="#src-6">[6]</a></sup> and China approved an under-eye label extension <sup class="ref"><a href="#src-7">[7]</a></sup>; Japan added a masseter indication for toxin <sup class="ref"><a href="#src-29">[29]</a></sup>. IEUM expects the gap between ‘approved’ and ‘approved for this anatomy’ to define pricing in 2027.</li><li>Enforcement is moving to the point of sale and the port. FDA tied its MoCRA clarification to TikTok Shop onboarding <sup class="ref"><a href="#src-8">[8]</a></sup>; Singapore acted by importer and batch <sup class="ref"><a href="#src-9">[9]</a></sup>; Indonesia now inspects before shipment <sup class="ref"><a href="#src-16">[16]</a></sup>. IEUM’s read: compliance documentation is becoming a channel-access document, not a regulatory-affairs file.</li><li>China is opening actives while tightening claims. NMPA released bakuchiol and NMN to all notifiers <sup class="ref"><a href="#src-13">[13]</a></sup> in the same window that Korea posted draft amendments to its functional-cosmetic review and claim-substantiation rules (contents not publicly retrievable at press time) <sup class="ref"><a href="#src-45">[45]</a></sup><sup class="ref"><a href="#src-46">[46]</a></sup>. IEUM expects the winners to be formulators who can move an ingredient from ‘allowed’ to ‘substantiated’ fastest.</li></ol>
+<h4>What to watch next</h4><ul><li>2026-09-19 — Sephora Drop Shop pilot begins on TikTok Shop <sup class="ref"><a href="#src-2">[2]</a></sup></li><li>2026-09-27 — EU Directive 2024/825 blacklist of generic environmental claims applies to cosmetics <sup class="ref"><a href="#src-47">[47]</a></sup></li><li>2026-09-28 — Comment deadline, EU draft regulation on silver in cosmetics (G/TBT/N/EU/1227) <sup class="ref"><a href="#src-48">[48]</a></sup></li><li>2026-10-14 / 2026-12-01 — US launches of Belotero Volume (+) and Intense (+) <sup class="ref"><a href="#src-5">[5]</a></sup></li><li>2026-10-17 — Indonesia mandatory halal certification for cosmetics takes effect <sup class="ref"><a href="#src-17">[17]</a></sup></li><li>October 2026 — Bloomage’s China launch of JUVELOOK (PDLLA/HA biostimulator), per trade press <sup class="ref"><a href="#src-49">[49]</a></sup></li><li>November 2026 — PROYA on shelf in 400 Ulta stores <sup class="ref"><a href="#src-4">[4]</a></sup></li><li>End-2026 — RZL-012 China NDA submission planned <sup class="ref"><a href="#src-31">[31]</a></sup>; Q4 2026 — expected adoption of the EU Annex II/III/V omnibus and UK government consultation on non-surgical procedure licensing <sup class="ref"><a href="#src-50">[50]</a></sup></li></ul>
+<h4>Recommendation &amp; next steps</h4><p>Recommendation: treat Q4 2026 as a documentation quarter. R&amp;D teams should (1) commission one instrumented or split-face study on the hero SKU designed to the US claim it must carry, (2) re-file China SKUs that were parked pending bakuchiol/NMN status, and (3) add prohibited-colourant screening to export batch release. Marketing teams should (1) fix the channel tier for the US before the November Ulta reset and any TikTok Shop drop, (2) remove ‘FDA-registered’ and generic ‘natural/eco’ language from US and EU copy before 27 September, and (3) audit how AI assistants describe the hero SKU and correct the source pages. Knowledge gaps this issue: the contents of Korea’s two MFDS draft amendments were not publicly retrievable at press time; trial sample sizes for Belotero and RHA Redensity Eye were not disclosed by the companies.</p>
+</div></section>
+<section class="sec footer"><h2><span class="num">9</span>Disclaimer &amp; Sources</h2>
+<p class="disc">Disclaimer — This newsletter is provided for general information only and does not constitute legal, medical, regulatory, or investment advice. All content is compiled from publicly available sources cited herein; IEUM Value Creator has not verified information beyond those sources and accepts no liability for actions taken in reliance on it. No client or confidential information is included. Trademarks and product names belong to their respective owners. Regulatory classifications reflect the cited regulator’s public records as of the coverage window and may change.</p>
+<p class="svc">IEUM Value Creator advises aesthetics and cosmeceutical companies on cross-border BD, licensing, and market entry. Contact: jayjay@ieumvc.com</p>
+<h4>Sources</h4><ol class="sources"><li id="src-1">[1] MOTIE, 2026년 8월 수출입동향 (2026-09-01) — <a href="https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172145/view" target="_blank" rel="noopener">https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172145/view</a></li><li id="src-2">[2] Sephora newsroom, 2026-09-02 — <a href="https://newsroom.sephora.com/sephora-launches-on-tiktok-shop-bringing-a-new-beauty-shopping-experience-to-u-s-customers-with-its-sephora-drop-shop/" target="_blank" rel="noopener">https://newsroom.sephora.com/sephora-launches-on-tiktok-shop-bringing-a-new-beauty-shopping-experience-to-u-s-customers-with-its-sephora-drop-shop/</a></li><li id="src-3">[3] Target corporate newsroom, 2026-09-10 — <a href="https://corporate.target.com/news-features/article/2026/08/target-beauty-studio" target="_blank" rel="noopener">https://corporate.target.com/news-features/article/2026/08/target-beauty-studio</a></li><li id="src-4">[4] PROYA press release via PR Newswire, 2026-08-19 — <a href="https://www.tradingview.com/news/prnewswire:8520a832ffd99:0-proya-partners-with-ulta-beauty-joining-the-retailer-s-prestige-skincare-portfolio-later-this-year/" target="_blank" rel="noopener">https://www.tradingview.com/news/prnewswire:8520a832ffd99:0-proya-partners-with-ulta-beauty-joining-the-retailer-s-prestige-skincare-portfolio-later-this-year/</a></li><li id="src-5">[5] Merz Aesthetics via Business Wire, 2026-09-14 — <a href="https://www.businesswire.com/news/home/20260914841148/en/Merz-Aesthetics-Brings-Comprehensive-BELOTERO-Hyaluronic-Acid-Portfolio-to-U.S.-Market-with-FDA-Approvals-of-BELOTERO-VOLUME-and-BELOTERO-INTENSE-" target="_blank" rel="noopener">https://www.businesswire.com/news/home/20260914841148/en/Merz-Aesthetics-Brings-Comprehensive-BELOTERO-Hyaluronic-Acid-Portfolio-to-U.S.-Market-with-FDA-Approvals-of-BELOTERO-VOLUME-and-BELOTERO-INTENSE-</a></li><li id="src-6">[6] Revance / Teoxane via PR Newswire, 2026-08-20 — <a href="https://www.prnewswire.com/news-releases/revance-and-teoxane-announce-the-fda-approval-of-rha-redensity-eye-for-undereye-hollowing-302855805.html" target="_blank" rel="noopener">https://www.prnewswire.com/news-releases/revance-and-teoxane-announce-the-fda-approval-of-rha-redensity-eye-for-undereye-hollowing-302855805.html</a></li><li id="src-7">[7] 医美行业观察, Volbella China approval, 2026-09-10 (secondary) — <a href="https://www.ymguancha.com/post/19622.html" target="_blank" rel="noopener">https://www.ymguancha.com/post/19622.html</a></li><li id="src-8">[8] FDA, Cosmetics news, 2026-09-09 — <a href="https://www.fda.gov/cosmetics/cosmetics-news-events/fda-clarifies-it-does-not-provide-certificates-or-other-documents-verify-compliance-cosmetic-product" target="_blank" rel="noopener">https://www.fda.gov/cosmetics/cosmetics-news-events/fda-clarifies-it-does-not-provide-certificates-or-other-documents-verify-compliance-cosmetic-product</a></li><li id="src-9">[9] HSA Singapore, recall notice, 2026-08-26/28 — <a href="https://www.hsa.gov.sg/announcements/medicube-pdrn-pink-collagen-capsule-cream--/" target="_blank" rel="noopener">https://www.hsa.gov.sg/announcements/medicube-pdrn-pink-collagen-capsule-cream--/</a></li><li id="src-10">[10] Puig newsroom, 2026-09-14 — <a href="https://www.puig.com/en/newsroom/new-chapter-for-isdin-puig-to-assume-full-ownership/" target="_blank" rel="noopener">https://www.puig.com/en/newsroom/new-chapter-for-isdin-puig-to-assume-full-ownership/</a></li><li id="src-11">[11] L'Oréal Groupe newsroom, 2026-09-09 — <a href="https://www.loreal.com/en/news/group/l-oreal-groupe-and-cosmax-sign-memorandum-of-understanding-to-collaborate-on-next-generation-beauty-innovations/" target="_blank" rel="noopener">https://www.loreal.com/en/news/group/l-oreal-groupe-and-cosmax-sign-memorandum-of-understanding-to-collaborate-on-next-generation-beauty-innovations/</a></li><li id="src-12">[12] 医美行业观察, 末央生物 investment, 2026-09-08 (secondary) — <a href="https://www.ymguancha.com/post/19617.html" target="_blank" rel="noopener">https://www.ymguancha.com/post/19617.html</a></li><li id="src-13">[13] NMPA notice (reprint, CIO Pharma), 2026-08-19 — <a href="https://www.ciopharma.com/supervise/68180" target="_blank" rel="noopener">https://www.ciopharma.com/supervise/68180</a></li><li id="src-14">[14] REACH24H, IECIC addition analysis (secondary) — <a href="https://www.reach24h.com/cosmetic/industry-news/ingredients-catalog-added" target="_blank" rel="noopener">https://www.reach24h.com/cosmetic/industry-news/ingredients-catalog-added</a></li><li id="src-15">[15] HSA Singapore, test-results announcement — <a href="https://www.hsa.gov.sg/announcements/hsa-tests-product-samples-of-medicube-pdrn-pink-collagen-capsule-cream-for-presence-of-sudan-red-dyes/" target="_blank" rel="noopener">https://www.hsa.gov.sg/announcements/hsa-tests-product-samples-of-medicube-pdrn-pink-collagen-capsule-cream-for-presence-of-sudan-red-dyes/</a></li><li id="src-16">[16] ChemLinked, BPJPH Reg. 4/2026 inspection bodies (secondary), 2026-09-10 — <a href="https://cosmetic.chemlinked.com/news/cosmetic-news/indonesia-bpjph-lists-4-bodies-for-halal-pre-shipment-checks" target="_blank" rel="noopener">https://cosmetic.chemlinked.com/news/cosmetic-news/indonesia-bpjph-lists-4-bodies-for-halal-pre-shipment-checks</a></li><li id="src-17">[17] BPJPH Indonesia, halal cosmetics deadline notice — <a href="https://bpjph.halal.go.id/detail/bpjph-produk-kosmetik-wajib-bersertifikat-halal-pada-oktober-2026/" target="_blank" rel="noopener">https://bpjph.halal.go.id/detail/bpjph-produk-kosmetik-wajib-bersertifikat-halal-pada-oktober-2026/</a></li><li id="src-18">[18] MFDS press release, 2026-09-07 — <a href="https://www.mfds.go.kr/brd/m_99/view.do?seq=50328" target="_blank" rel="noopener">https://www.mfds.go.kr/brd/m_99/view.do?seq=50328</a></li><li id="src-19">[19] 이투데이, GCORAS 의장국 선출 (secondary) — <a href="https://www.etoday.co.kr/news/view/2626381" target="_blank" rel="noopener">https://www.etoday.co.kr/news/view/2626381</a></li><li id="src-20">[20] Rohto Pharmaceutical, technology release, 2026-09-08 — <a href="https://www.rohto.co.jp/research/researchnews/technologyrelease/2026/0908_01" target="_blank" rel="noopener">https://www.rohto.co.jp/research/researchnews/technologyrelease/2026/0908_01</a></li><li id="src-21">[21] J Cosmet Dermatol 2026;25(7), DOI 10.1111/jocd.71052 — <a href="https://doi.org/10.1111/jocd.71052" target="_blank" rel="noopener">https://doi.org/10.1111/jocd.71052</a></li><li id="src-22">[22] Dermatology Times, 2026-08-21 (secondary) — <a href="https://www.dermatologytimes.com/view/micro-gauge-needles-with-ldsi-improve-patient-comfort-and-reduce-botulinum-toxin-wastage" target="_blank" rel="noopener">https://www.dermatologytimes.com/view/micro-gauge-needles-with-ldsi-improve-patient-comfort-and-reduce-botulinum-toxin-wastage</a></li><li id="src-23">[23] Amorepacific newsroom, 2026-09-09 — <a href="https://www.apgroup.com/int/ko/news/2026-09-09-1.html" target="_blank" rel="noopener">https://www.apgroup.com/int/ko/news/2026-09-09-1.html</a></li><li id="src-24">[24] Beiersdorf press release, 2026-09-01 — <a href="https://www.beiersdorf.com/newsroom/press-information/all-press-releases/2026/09/01-beiersdorf-strengthens-derma-business-with-microbiome-technology" target="_blank" rel="noopener">https://www.beiersdorf.com/newsroom/press-information/all-press-releases/2026/09/01-beiersdorf-strengthens-derma-business-with-microbiome-technology</a></li><li id="src-25">[25] Cosmax media, 2026-09-11 — <a href="https://www.cosmax.com/media/cosmax-obtained-functional-approval-for-bakuchiol-multi-balm/" target="_blank" rel="noopener">https://www.cosmax.com/media/cosmax-obtained-functional-approval-for-bakuchiol-multi-balm/</a></li><li id="src-26">[26] 코스인, 코스맥스 바쿠치올 멀티밤 기능성 승인 (secondary) — <a href="https://www.cosinkorea.com/news/article.html?no=58287" target="_blank" rel="noopener">https://www.cosinkorea.com/news/article.html?no=58287</a></li><li id="src-27">[27] 더바이오, 종근당바이오 CU-20101 중국 허가신청, 2026-08-18 (secondary) — <a href="https://www.thebionews.net/news/articleView.html?idxno=27272" target="_blank" rel="noopener">https://www.thebionews.net/news/articleView.html?idxno=27272</a></li><li id="src-28">[28] 이투데이, 종근당바이오 CU-20101 (secondary) — <a href="https://www.etoday.co.kr/news/view/2615325" target="_blank" rel="noopener">https://www.etoday.co.kr/news/view/2615325</a></li><li id="src-29">[29] Almond Clinic column citing Allergan Aesthetics Japan approval (secondary) — <a href="https://almond.clinic/column/botox/17143/" target="_blank" rel="noopener">https://almond.clinic/column/botox/17143/</a></li><li id="src-30">[30] Allergan Aesthetics Japan release, hosted by Nikkei BP, 2026-08-27 — <a href="https://bio.nikkeibp.co.jp/atcl/release/26/08/27/28673/" target="_blank" rel="noopener">https://bio.nikkeibp.co.jp/atcl/release/26/08/27/28673/</a></li><li id="src-31">[31] Raziel Therapeutics / Fosun Pharma via PR Newswire, 2026-09-02 — <a href="https://www.prnewswire.com/news-releases/raziel-therapeutics-and-fosun-pharma-announce-positive-phase-3-results-for-rzl-012-in-submental-fat-reduction-clearing-the-path-to-a-china-nda-filing-302867570.html" target="_blank" rel="noopener">https://www.prnewswire.com/news-releases/raziel-therapeutics-and-fosun-pharma-announce-positive-phase-3-results-for-rzl-012-in-submental-fat-reduction-clearing-the-path-to-a-china-nda-filing-302867570.html</a></li><li id="src-32">[32] Global Cosmetics News, Puig–ISDIN terms (secondary) — <a href="https://www.globalcosmeticsnews.com/puig-takes-full-ownership-of-isdin-in-e1-2-billion-deal/" target="_blank" rel="noopener">https://www.globalcosmeticsnews.com/puig-takes-full-ownership-of-isdin-in-e1-2-billion-deal/</a></li><li id="src-33">[33] Cosmax media, 2026-09-08 — <a href="https://www.cosmax.com/media/cosmax-loreal-group-mou-2026/" target="_blank" rel="noopener">https://www.cosmax.com/media/cosmax-loreal-group-mou-2026/</a></li><li id="src-34">[34] CVC Capital Partners, 2026-08-18 — <a href="https://www.cvc.com/media/news/2026/cvc-asia-invests-in-leading-global-distributor-of-k-beauty-products-silicon2/" target="_blank" rel="noopener">https://www.cvc.com/media/news/2026/cvc-asia-invests-in-leading-global-distributor-of-k-beauty-products-silicon2/</a></li><li id="src-35">[35] Seoul Economic Daily (EN), 2026-08-18 (secondary) — <a href="https://en.sedaily.com/news/2026/08/18/silicon2-draws-220-million-from-cvc-capital-to-speed-global" target="_blank" rel="noopener">https://en.sedaily.com/news/2026/08/18/silicon2-draws-220-million-from-cvc-capital-to-speed-global</a></li><li id="src-36">[36] AXIS-Y via PR Newswire, 2026-09-07 — <a href="https://www.prnewswire.com/news-releases/built-beyond-trends-global-k-beauty-brand-axis-y-enters-its-next-growth-chapter-with-mbk-partners-at-a-krw-430-billion-valuation-302871290.html" target="_blank" rel="noopener">https://www.prnewswire.com/news-releases/built-beyond-trends-global-k-beauty-brand-axis-y-enters-its-next-growth-chapter-with-mbk-partners-at-a-krw-430-billion-valuation-302871290.html</a></li><li id="src-37">[37] 코스인, 8월 화장품 수출 지역별 집계 (secondary) — <a href="https://www.cosinkorea.com/news/article.html?no=58205" target="_blank" rel="noopener">https://www.cosinkorea.com/news/article.html?no=58205</a></li><li id="src-38">[38] CJ Olive Young newsroom, 2026-08-31 — <a href="https://corp.oliveyoung.com/ko/news/155?pg=1&amp;category=" target="_blank" rel="noopener">https://corp.oliveyoung.com/ko/news/155?pg=1&amp;category=</a></li><li id="src-39">[39] Sungboon Editor / Milk Touch, PR Newswire, 2026-09-10 — <a href="https://www.prnewswire.com/news-releases/sungboon-editor-and-milk-touch-bring-next-generation-k-beauty-to-target-beauty-studio-302877479.html" target="_blank" rel="noopener">https://www.prnewswire.com/news-releases/sungboon-editor-and-milk-touch-bring-next-generation-k-beauty-to-target-beauty-studio-302877479.html</a></li><li id="src-40">[40] Cosmetics Business, Sephora × Olive Young US debut (secondary) — <a href="https://cosmeticsbusiness.com/sephora-olive-young-strategic-k-beauty-partnership-debut" target="_blank" rel="noopener">https://cosmeticsbusiness.com/sephora-olive-young-strategic-k-beauty-partnership-debut</a></li><li id="src-41">[41] The Estée Lauder Companies, FY2026 results, 2026-08-19 — <a href="https://www.elcompanies.com/en/news-and-media/newsroom/press-releases/2026/08-19-2026-110037466" target="_blank" rel="noopener">https://www.elcompanies.com/en/news-and-media/newsroom/press-releases/2026/08-19-2026-110037466</a></li><li id="src-42">[42] Ulta Beauty, Q2 FY2026 results, 2026-08-27 — <a href="https://www.ulta.com/investor/news-events/press-releases/detail/234/ulta-beauty-announces-second-quarter-fiscal-2026-results" target="_blank" rel="noopener">https://www.ulta.com/investor/news-events/press-releases/detail/234/ulta-beauty-announces-second-quarter-fiscal-2026-results</a></li><li id="src-43">[43] CJ Olive Young newsroom, 2026-08-18 — <a href="https://corp.oliveyoung.com/ko/news/153?pg=1&amp;category=" target="_blank" rel="noopener">https://corp.oliveyoung.com/ko/news/153?pg=1&amp;category=</a></li><li id="src-44">[44] The Estée Lauder Companies via Business Wire, 2026-09-13 — <a href="https://www.businesswire.com/news/home/20260913741575/en/The-Este-Lauder-Companies-Announces-Partnership-with-Profound-to-Expand-AI-Visibility-Across-Its-Global-Brand-Portfolio" target="_blank" rel="noopener">https://www.businesswire.com/news/home/20260913741575/en/The-Este-Lauder-Companies-Announces-Partnership-with-Profound-to-Expand-AI-Visibility-Across-Its-Global-Brand-Portfolio</a></li><li id="src-45">[45] MFDS 행정예고, 기능성화장품 심사에 관한 규정 일부개정고시안, 2026-08-18 — <a href="https://www.mfds.go.kr/brd/m_209/view.do?seq=2180" target="_blank" rel="noopener">https://www.mfds.go.kr/brd/m_209/view.do?seq=2180</a></li><li id="src-46">[46] MFDS 행정예고, 화장품 표시·광고 실증에 관한 규정 일부개정고시안, 2026-08-18 — <a href="https://www.mfds.go.kr/brd/m_209/view.do?seq=2181" target="_blank" rel="noopener">https://www.mfds.go.kr/brd/m_209/view.do?seq=2181</a></li><li id="src-47">[47] CIRS, EU Directive 2024/825 applies 2026-09-27 (secondary) — <a href="http://www.cirs-group.com/en/cosmetics/eu-ecgt-applies-from-september-27-requirements-for-cosmetic-claims-tightened-across-the-board" target="_blank" rel="noopener">http://www.cirs-group.com/en/cosmetics/eu-ecgt-applies-from-september-27-requirements-for-cosmetic-claims-tightened-across-the-board</a></li><li id="src-48">[48] European Commission TBT notification G/TBT/N/EU/1227 — <a href="https://technical-barriers-trade.ec.europa.eu/en/notification/40131" target="_blank" rel="noopener">https://technical-barriers-trade.ec.europa.eu/en/notification/40131</a></li><li id="src-49">[49] 医美行业观察, Bloomage JUVELOOK China launch (secondary) — <a href="https://www.ymguancha.com/post/19626.html" target="_blank" rel="noopener">https://www.ymguancha.com/post/19626.html</a></li><li id="src-50">[50] UK Parliament Women and Equalities Committee, 2026-09-11 — <a href="https://committees.parliament.uk/committee/328/women-and-equalities-committee/news/217824/delays-in-acting-on-highrisk-cosmetic-procedures-is-prolonging-a-significant-risk-to-patient-safety-wec-warns/" target="_blank" rel="noopener">https://committees.parliament.uk/committee/328/women-and-equalities-committee/news/217824/delays-in-acting-on-highrisk-cosmetic-procedures-is-prolonging-a-significant-risk-to-patient-safety-wec-warns/</a></li></ol>
+<p class="colophon">© 2026 IEUM Value Creator · Prepared by IEUM Value Creator · jayjay@ieumvc.com</p>
+</section></div>
+<div class="lang-kr">
+<header class="masthead">
+  <div class="brand">IEUM Value Creator</div>
+  <h1>IEUM 에스테틱·코스메슈티컬 먼슬리</h1>
+  <div class="mast-meta">
+    <span>제 1호</span>
+    <span>커버리지 기간: 2026-08-16 – 2026-09-15</span>
+    <span>발행일: 2026-09-20</span>
+    <span>Prepared by IEUM Value Creator</span>
+  </div>
+</header>
+<section class="sec"><h2><span class="num">1</span>이그제큐티브 레이더</h2><ol class="radar">
+<li><p class="radar-h">8월 한국 화장품 수출 13.1억 달러, 전년 대비 +52.1% — 8월 기준 역대 최대.<sup class="ref"><a href="#src-1">[1]</a></sup></p><p class="why"><span class="sw-label">왜 중요한가</span> 성장 축이 중국에서 미국·EU로 이동했다. 수출 계획의 무게중심을 서구권 규제·채널 준비로 옮겨야 한다.</p></li>
+<li><p class="radar-h">세포라 틱톡샵 진출, 타겟 600개 매장 ‘뷰티 스튜디오’ 개점, 프로야 얼타 400개 매장 입점.<sup class="ref"><a href="#src-2">[2]</a></sup><sup class="ref"><a href="#src-3">[3]</a></sup><sup class="ref"><a href="#src-4">[4]</a></sup></p><p class="why"><span class="sw-label">왜 중요한가</span> 미국 매대가 한 시즌 만에 재편되고 있다. K-뷰티는 같은 프레스티지 스킨케어 진열대에서 C-뷰티와 맞붙게 되며, 채널 등급을 의도적으로 선택해야 한다.</p></li>
+<li><p class="radar-h">메르츠 벨로테로 필러 2종 FDA 승인; 눈밑(인프라오비탈) HA 필러가 미국(RHA 리덴시티 아이)과 중국(쥬비덤 볼벨라)에서 동시 승인.<sup class="ref"><a href="#src-5">[5]</a></sup><sup class="ref"><a href="#src-6">[6]</a></sup><sup class="ref"><a href="#src-7">[7]</a></sup></p><p class="why"><span class="sw-label">왜 중요한가</span> 적응증별 피벗 데이터가 프리미엄 필러 세그먼트의 입장권이 됐다. 미국·중국 적응증 임상이 없는 한국 HA 업체는 라벨 경쟁에서 밀린다.</p></li>
+<li><p class="radar-h">FDA, MoCRA 등록을 증명하는 증명서·확인서를 발급하지 않는다고 공식 명시 — 틱톡샵 판매자 심사 요청과 연결.<sup class="ref"><a href="#src-8">[8]</a></sup></p><p class="why"><span class="sw-label">왜 중요한가</span> ‘FDA 등록’은 FDA가 서류로 증명해 주지 않으며 여전히 광고 표현 리스크다. 마켓플레이스는 입증 부담을 브랜드 자체 기록으로 넘길 것이다.</p></li>
+<li><p class="radar-h">싱가포르 HSA, 수단 IV 검출로 메디큐브 크림 2개 배치 리콜.<sup class="ref"><a href="#src-9">[9]</a></sup></p><p class="why"><span class="sw-label">왜 중요한가</span> 2026년 ASEAN에서 K-뷰티 톱셀러 SKU에 대한 첫 규제당국 조치. 색소·배치 출하 검사가 수출의 전제조건이 됐다.</p></li>
+<li><p class="radar-h">전략적 투자자들이 ‘더마’ 역량을 사들인다: 푸이그 ISDIN 100% 인수, 로레알–코스맥스 공동개발 MOU 및 중국 CaHA 필러사 펀드 지분 투자.<sup class="ref"><a href="#src-10">[10]</a></sup><sup class="ref"><a href="#src-11">[11]</a></sup><sup class="ref"><a href="#src-12">[12]</a></sup></p><p class="why"><span class="sw-label">왜 중요한가</span> 피부과 인접 스킨케어와 시술 연계 제형이 전략적 자본이 몰리는 자산이다. ODM과 클리닉 채널 브랜드가 타깃이 된다.</p></li>
+<li><p class="radar-h">중국 NMPA, 3년 모니터링 종료 후 바쿠치올·NMN을 개방형 IECIC(기사용 원료 목록)에 편입.<sup class="ref"><a href="#src-13">[13]</a></sup></p><p class="why"><span class="sw-label">왜 중요한가</span> 레티놀 대체·‘롱제비티’ 원료의 중국 제형 창이 모든 신고자에게 동시에 열렸다. 선점 배타성은 사라졌고 신고 속도가 관건이다.</p></li>
+</ol></section>
+<section class="sec" id="reg-kr"><h2><span class="num">2</span>규제 &amp; 클레임 워치</h2>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔴 높음</span><span class="chip cat">규제</span><span class="chip date">2026-09-09</span></div>
+  <h3>FDA, MoCRA 시설등록·제품목록 ‘증명서’는 존재하지 않는다고 공지</h3>
+  <p class="fact">FDA는 2026-09-09 MoCRA에 따른 화장품 시설등록·제품목록에 대해 등록증명서, 확인서, 면제확인서를 발급하지 않는다고 명확히 했다. FDA는 “틱톡샵 등” 이커머스 플랫폼이 판매자에게 FDA 등록 증빙이나 면제 확인 서한을 요구하면서 문의가 늘었다고 밝혔다. 기업은 FDA의 등록·목록 안내 자료를 참고해야 하며, 등록은 승인이나 홍보 수단이 아니다.</p>
+  <div class="tags"><span class="chip">권역: 미국</span><span class="chip">분류: 화장품 (MoCRA)</span></div>
+  <p class="sowhat"><span class="sw-label">So What</span> 마켓플레이스 입점용 자체 확인 자료(등록·목록 화면 캡처, RP 정보)를 준비하고, 미국향 카피에서 ‘FDA 등록/승인’ 표현을 모두 제거하라.</p>
+  
+  <p class="src">출처: <a href="https://www.fda.gov/cosmetics/cosmetics-news-events/fda-clarifies-it-does-not-provide-certificates-or-other-documents-verify-compliance-cosmetic-product" target="_blank" rel="noopener">[8] FDA, Cosmetics news, 2026-09-09</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔴 높음</span><span class="chip cat">규제</span><span class="chip date">2026-08-19</span></div>
+  <h3>NMPA, 바쿠치올·NMN을 IECIC에 편입해 전체 신고자에게 개방</h3>
+  <p class="fact">NMPA는 2026-08-19 발표한 제5차 기사용 화장품 원료 목록(IECIC) 동적 조정에서 신고 후 3년 안전성 모니터링을 마친 신원료 4종—아젤라산 모노아마이드 프로필 디메틸아민, 세틸 디글리세릴 트리스(트리메틸실록시)실릴에틸 디메치콘, β-니코틴아마이드 모노뉴클레오타이드(NMN), 바쿠치올—을 편입했다. IECIC 등재 원료는 신원료 신고 없이 모든 등록·신고인이 사용할 수 있어, 최초 신고사의 사실상 배타성이 종료된다.</p>
+  <div class="tags"><span class="chip">권역: 중국</span><span class="chip">분류: 일반 화장품 원료</span></div>
+  <p class="sowhat"><span class="sw-label">So What</span> 이제 중국에서 3년 신원료 절차 없이 바쿠치올·NMN 제품을 신고할 수 있다. 보류했던 중국향 SKU를 재검토하고, 신고 전 효능 클레임 입증 요건을 확인하라.</p>
+  
+  <p class="src">출처: <a href="https://www.ciopharma.com/supervise/68180" target="_blank" rel="noopener">[13] NMPA notice (reprint, CIO Pharma), 2026-08-19</a> · <a href="https://www.reach24h.com/cosmetic/industry-news/ingredients-catalog-added" target="_blank" rel="noopener">[14] REACH24H, IECIC addition analysis (secondary)</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔴 높음</span><span class="chip cat">규제</span><span class="chip date">2026-08-26</span></div>
+  <h3>싱가포르 HSA, 수단 IV 검출로 메디큐브 크림 2개 배치 리콜</h3>
+  <p class="fact">HSA는 Venus Beauty Pte. Ltd.가 수입한 메디큐브 PDRN 핑크 콜라겐 캡슐 크림 2개 배치(2E122I.2E117I, 2E191G.2E193G)에서 수단 IV가 검출되어 소매 단계 2등급 리콜을 명령했다(리콜일 2026-08-26, 공지 2026-08-28). HSA는 앞서 수입사 3곳의 판매를 검사 완료 시까지 중단시켰고, 나머지 두 수입사 샘플은 음성으로 확인됐다. 2등급은 심각한 건강 피해 가능성이 낮은 사안을 뜻한다.</p>
+  <div class="tags"><span class="chip">권역: 싱가포르</span><span class="chip">분류: 화장품 (ASEAN 화장품 지침)</span><span class="chip">조치: 2등급 리콜</span></div>
+  <p class="sowhat"><span class="sw-label">So What</span> 핑크·레드 색조 수출 SKU의 배치 출하 COA에 금지 색소(수단 염료) 스크리닝을 추가하고, 규제당국이 수입사·배치 단위로 조치하므로 수입사별 추적성을 유지하라.</p>
+  
+  <p class="src">출처: <a href="https://www.hsa.gov.sg/announcements/medicube-pdrn-pink-collagen-capsule-cream--/" target="_blank" rel="noopener">[9] HSA Singapore, recall notice, 2026-08-26/28</a> · <a href="https://www.hsa.gov.sg/announcements/hsa-tests-product-samples-of-medicube-pdrn-pink-collagen-capsule-cream-for-presence-of-sudan-red-dyes/" target="_blank" rel="noopener">[15] HSA Singapore, test-results announcement</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔴 높음</span><span class="chip cat">규제</span><span class="chip date">2026-09-09</span></div>
+  <h3>인도네시아, 10월 17일 할랄 의무화 앞두고 선적 전 할랄 검사 의무화</h3>
+  <p class="fact">BPJPH 규정 2026년 제4호가 2026-09-09 발효됐다. 화장품을 포함한 할랄 인증 수입품은 원산지 창고에서 선적 전 적합성 검사(서류, 포장·라벨, 오염 위험)를 받고 통관 시 화물 단위 할랄 보증 보고서(LPPH)를 제출해야 한다. BPJPH는 2026-09-10 검사기관 4곳—PT Sucofindo, PT Surveyor Indonesia, PT Anindya Wiraputra Konsult, PT Mutu Agung Lestari—을 지정했다. 화장품 할랄 인증 의무화는 2026-10-17부터 적용된다.</p>
+  <div class="tags"><span class="chip">권역: 인도네시아</span><span class="chip">분류: 화장품 (할랄 인증 수입품)</span></div>
+  <p class="sowhat"><span class="sw-label">So What</span> 지금 검사기관을 예약하고 4분기 선적 일정을 LPPH 단계에 맞춰라. 없으면 10월 화물은 통관되지 않는다.</p>
+  <p class="note">규정 내용은 규제정보 서비스 요약으로 확인했으며, BPJPH 공지가 1차 근거다.</p>
+  <p class="src">출처: <a href="https://cosmetic.chemlinked.com/news/cosmetic-news/indonesia-bpjph-lists-4-bodies-for-halal-pre-shipment-checks" target="_blank" rel="noopener">[16] ChemLinked, BPJPH Reg. 4/2026 inspection bodies (secondary), 2026-09-10</a> · <a href="https://bpjph.halal.go.id/detail/bpjph-produk-kosmetik-wajib-bersertifikat-halal-pada-oktober-2026/" target="_blank" rel="noopener">[17] BPJPH Indonesia, halal cosmetics deadline notice</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🟡 중간</span><span class="chip cat">규제</span><span class="chip date">2026-09-07</span></div>
+  <h3>식약처, 세계 첫 글로벌 화장품 규제기관장 협의체를 서울에서 출범</h3>
+  <p class="fact">식약처는 2026-09-07 세계 최초 화장품 규제기관장 협의체를 신설하고 9월 7–9일 서울에서 회의를 개최한다고 발표했다. 언론 보도(2차 자료)에 따르면 베트남, 태국, 인도네시아, 말레이시아, 필리핀, UAE, 브라질, 멕시코 등 10여 개국 규제기관이 참여했고, 한국이 초대 의장국으로 선출되어 상설 사무국을 한국에 두기로 했으며, 베트남 신고 절차 간소화 등 양자 성과가 있었다. 의장국 선출에 관한 식약처 후속 보도자료는 이번 커버리지 기간 이후에 발표됐다.</p>
+  <div class="tags"><span class="chip">권역: 한국</span><span class="chip">범위: 규제 협력</span></div>
+  <p class="sowhat"><span class="sw-label">So What</span> RA 팀은 협의체의 양자 성과(베트남, 브라질, UAE)를 신흥시장 신고 마찰을 줄이는 가장 빠른 경로로 추적해야 한다.</p>
+  
+  <p class="src">출처: <a href="https://www.mfds.go.kr/brd/m_99/view.do?seq=50328" target="_blank" rel="noopener">[18] MFDS press release, 2026-09-07</a> · <a href="https://www.etoday.co.kr/news/view/2626381" target="_blank" rel="noopener">[19] 이투데이, GCORAS 의장국 선출 (secondary)</a></p>
+</article>
+</section>
+<section class="sec" id="sci-kr"><h2><span class="num">3</span>성분 &amp; 사이언스 브리프</h2>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🟡 중간</span><span class="chip cat">과학</span><span class="chip date">2026-09-08</span></div>
+  <h3>로토제약, 3% 용해형 아젤라산 세럼이 여드름에서 20% 크림과 동등</h3>
+  <p class="fact">로토제약은 12주 평가자 맹검 무작위 반안면 비교 시험(N=28, 18–39세 경증–중등도 여드름, 2026년 2–5월)에서 비중화 용해 기술로 만든 3% 아젤라산 세럼과 기존 20% 분산형 크림을 비교했다. 12주 총 병변 감소는 동등했고, 세럼은 피부 침투 효율이 약 4배 높았으며 2주차 가려움·자극 보고가 적었고(무자극 응답률 23.0%p 우위) 항 C. acnes 활성도 동등했다. 제품 관련 이상반응은 없었다. 2026-08-01 제44회 일본미용피부과학회 발표이며 동료심사 논문은 아니다.</p>
+  <div class="tags"><span class="chip">권역: 일본</span><span class="chip">분류: 화장품 원료 (일본)</span><span class="chip">근거: 반안면 대조 RCT, 자사 수행, N=28</span></div>
+  <p class="sowhat"><span class="sw-label">So What</span> 시험해야 할 차별화 변수는 농도가 아니라 용해 기술이다. 침투·내약성 데이터를 갖춘 저농도 AZA 클레임은 일본·한국에서 ‘민감성 여드름’ 포지션으로 설득력이 있다.</p>
+  
+  <p class="src">출처: <a href="https://www.rohto.co.jp/research/researchnews/technologyrelease/2026/0908_01" target="_blank" rel="noopener">[20] Rohto Pharmaceutical, technology release, 2026-09-08</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔵 낮음</span><span class="chip cat">과학</span><span class="chip date">2026-08-21</span></div>
+  <h3>반안면 RCT: 34G 저사강 주사기가 톡신 통증과 손실을 줄여</h3>
+  <p class="fact">Journal of Cosmetic Dermatology(2026;25(7), DOI 10.1111/jocd.71052, 2026-08-21 보도)에 게재된 전향적 무작위 단일맹검 반안면 시험(N=42, 18–65세, 터키 바슈켄트대)은 상안면 보툴리눔 톡신 주사에서 34G 저사강(low-dead-space) 주사기와 30G 인슐린 주사기를 비교했다. 34G 쪽 VAS 통증이 모든 부위에서 낮았고(전두 3.90 vs 5.66, 미간 3.30 vs 5.07, 눈가 2.00 vs 3.33), 34G 쪽에는 멍이 없었으며, 잔여 제품량은 평균 0.0192 g vs 0.0539 g로 일반 주사기의 손실이 약 2.8배였다.</p>
+  <div class="tags"><span class="chip">권역: 미국/글로벌</span><span class="chip">분류: 의료기기 (주사기) / 전문의약품 (톡신)</span><span class="chip">근거: 반안면 RCT, 동료심사, N=42</span></div>
+  <p class="sowhat"><span class="sw-label">So What</span> 톡신 마케터와 기기 공급사는 편안함과 함께 바이알당 경제성 메시지(손실 유닛 감소)를 수치화할 수 있다. 환자와 CFO 모두에게 통하는 드문 클레임이다.</p>
+  
+  <p class="src">출처: <a href="https://doi.org/10.1111/jocd.71052" target="_blank" rel="noopener">[21] J Cosmet Dermatol 2026;25(7), DOI 10.1111/jocd.71052</a> · <a href="https://www.dermatologytimes.com/view/micro-gauge-needles-with-ldsi-improve-patient-comfort-and-reduce-botulinum-toxin-wastage" target="_blank" rel="noopener">[22] Dermatology Times, 2026-08-21 (secondary)</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔵 낮음</span><span class="chip cat">과학</span><span class="chip date">2026-09-09</span></div>
+  <h3>아모레퍼시픽, 여드름 후 색소침착에 작용하는 마이크로바이옴 추출물 발표</h3>
+  <p class="fact">아모레퍼시픽은 2026-09-09 International Journal of Molecular Sciences(2026년 8월 온라인) 논문을 발표했다. 모라놀린 고생산 자체 균주 Bacillus velezensis AmoreLumina의 배양 추출물이 in-vitro 및 ex-vivo 인체 피부 모델에서 멜라닌 생성 효소 발현을 억제하고, 멜라닌을 축적한 대식세포의 오토파지·리소좀 분해를 활성화했다. 신규 색소 생성 억제와 잔류 색소 제거의 이중 기전으로 설명된다. 인체 임상 데이터나 상용화 일정은 공개되지 않았다.</p>
+  <div class="tags"><span class="chip">권역: 한국</span><span class="chip">분류: 연구 단계 원료 (기능성 고시 원료 아님)</span><span class="chip">근거: in-vitro / ex-vivo</span></div>
+  <p class="sowhat"><span class="sw-label">So What</span> ‘잔류 멜라닌 제거’ 기전에 기반한 미백 기능성화장품 심사 자료가 나올지 주시하라. 경쟁사의 PIH 클레임은 한국 출시 전 이 차별화 포지션과 비교 점검해야 한다.</p>
+  
+  <p class="src">출처: <a href="https://www.apgroup.com/int/ko/news/2026-09-09-1.html" target="_blank" rel="noopener">[23] Amorepacific newsroom, 2026-09-09</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🟡 중간</span><span class="chip cat">과학</span><span class="chip date">2026-09-01</span></div>
+  <h3>바이어스도르프, 살아있는 피부 상재균 2종을 담은 유세린 여드름 라인 출시</h3>
+  <p class="fact">바이어스도르프는 2026-09-01 여드름성 피부용 유세린 더모퓨어 클리니컬 PROBIOM8을 발표했다. 특허 TopiC.A 기술로 휴면 상태의 살아있는 피부 상재균 2종을 담아 광범위 항균이 아닌 마이크로바이옴 재균형을 겨냥한다. 2014년 이후 120건 이상의 자체 마이크로바이옴 연구를 인용하고 2025년 글로벌 여드름성 피부 스킨케어 시장을 46억 유로(2020–25 CAGR 8.8%)로 제시했으나, 제품의 임상 설계·N·평가변수는 공개하지 않았다.</p>
+  <div class="tags"><span class="chip">권역: EU</span><span class="chip">분류: 화장품 (EU 1223/2009)</span><span class="chip">근거: 마케팅 자료 — 임상 미공개</span></div>
+  <p class="sowhat"><span class="sw-label">So What</span> 생균 ‘더마’ 포지셔닝이 유럽 상위 3대 스킨케어사에서 주류가 됐다. 한국 마이크로바이옴 브랜드는 보존제 양립 생존율 데이터와 입증된 클레임 파일이 있어야 같은 매대에서 경쟁할 수 있다.</p>
+  
+  <p class="src">출처: <a href="https://www.beiersdorf.com/newsroom/press-information/all-press-releases/2026/09/01-beiersdorf-strengthens-derma-business-with-microbiome-technology" target="_blank" rel="noopener">[24] Beiersdorf press release, 2026-09-01</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔵 낮음</span><span class="chip cat">과학</span><span class="chip date">2026-09-11</span></div>
+  <h3>코스맥스, 바쿠치올 스틱 밤으로 주름개선 기능성화장품 승인 획득</h3>
+  <p class="fact">코스맥스는 2026-09-11 고형 스틱형 바쿠치올 멀티밤이 식약처 주름개선 기능성화장품 승인을 받았다고 발표했다. 바쿠치올은 고시 기능성 원료가 아니어서 개별 심사를 거쳤다. 코스맥스는 왁스 네트워크 구조로 액상 바쿠치올을 고함량으로 안정화해 스틱이 녹거나 부러지지 않는다고 설명하며, 레티놀 대비 열·광 안정성을 바탕으로 주간 ‘슬로우에이징’ 용도로 포지셔닝했다. 농도와 효능 수치는 미공개이며 고객사 출시는 2026년 내로 예상된다(2차 자료).</p>
+  <div class="tags"><span class="chip">권역: 한국</span><span class="chip">분류: 기능성화장품 (주름개선)</span><span class="chip">근거: 식약처 심사 자료, 데이터 비공개</span></div>
+  <p class="sowhat"><span class="sw-label">So What</span> NMPA IECIC 등재와 함께 바쿠치올은 한국(개별 기능성 심사 선례)과 중국 모두에서 경로가 열렸다. 브랜드 팀은 중국 별도 원료 자료 없이 한·중 ‘레티놀 대체’ 라인을 기획할 수 있다.</p>
+  
+  <p class="src">출처: <a href="https://www.cosmax.com/media/cosmax-obtained-functional-approval-for-bakuchiol-multi-balm/" target="_blank" rel="noopener">[25] Cosmax media, 2026-09-11</a> · <a href="https://www.cosinkorea.com/news/article.html?no=58287" target="_blank" rel="noopener">[26] 코스인, 코스맥스 바쿠치올 멀티밤 기능성 승인 (secondary)</a></p>
+</article>
+</section>
+<section class="sec" id="aes-kr"><h2><span class="num">4</span>메디컬 에스테틱 업데이트</h2>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔴 높음</span><span class="chip cat">메디컬 에스테틱</span><span class="chip date">2026-09-14</span></div>
+  <h3>FDA, 메르츠 벨로테로 볼륨(+)·인텐스(+) 필러 승인</h3>
+  <p class="fact">메르츠 에스테틱스는 2026-09-14 중안면 볼륨·윤곽 결손용 벨로테로 볼륨(+)(22세 이상)과 입술 볼륨·풍만감용 벨로테로 인텐스(+)(21세 이상)의 FDA 승인을 발표했다. 두 제품 모두 리도카인 함유 CPM(응집성 다밀도 매트릭스) HA 젤이다. 보도자료는 볼륨(+)의 12주 환자 만족도 95%와 최대 18개월 지속, 인텐스(+)의 만족도 100%와 최대 12개월 볼륨 유지를 제시했으나 시험명·N·설계는 밝히지 않았다. 미국 출시는 볼륨(+) 2026-10-14, 인텐스(+) 2026-12-01이며, 밸런스(+)와 함께 3개 제품 라인이 완성된다.</p>
+  <div class="tags"><span class="chip">권역: 미국</span><span class="chip">분류: 의료기기 3등급 (PMA)</span><span class="chip">근거: 회사 보고 피벗 데이터, 미발표</span></div>
+  <p class="sowhat"><span class="sw-label">So What</span> 미국 중안면·입술 세그먼트에 네 번째 풀라인 HA 경쟁자가 생겼다. 미국 PMA를 노리는 한국 HA 수출사는 6개월이 아닌 12–18개월 지속성 평가변수를 벤치마크해야 한다.</p>
+  
+  <p class="src">출처: <a href="https://www.businesswire.com/news/home/20260914841148/en/Merz-Aesthetics-Brings-Comprehensive-BELOTERO-Hyaluronic-Acid-Portfolio-to-U.S.-Market-with-FDA-Approvals-of-BELOTERO-VOLUME-and-BELOTERO-INTENSE-" target="_blank" rel="noopener">[5] Merz Aesthetics via Business Wire, 2026-09-14</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔴 높음</span><span class="chip cat">메디컬 에스테틱</span><span class="chip date">2026-08-20</span></div>
+  <h3>눈밑 HA 필러, 미국(RHA 리덴시티 아이)과 중국(볼벨라)에서 승인</h3>
+  <p class="fact">리반스와 테옥산은 2026-08-20 RHA 리덴시티 아이(PMA 보충 P170002/S050)의 FDA 승인을 발표했다. 적응증은 22세 이상 성인의 중등도–중증 눈밑 볼륨 결손이며, 전향적 무작위 평가자 맹검 다기관 무치료 대조 시험 TEO-RHA-1902에서 3개월 미용 개선 93%, 터치업 없이 12개월 유지, 혈관 폐색·육아종·지연성 염증 사례 없음(N 미공개)이 근거다. 2026-09-10에는 NMPA가 리도카인 함유 쥬비덤 볼벨라의 중등도–중증 눈밑 함몰 적응증을 승인했다. 중국 3상(다기관 무작위 평가자 맹검 지연치료 대조)에서 3개월 1등급 이상 개선 94.6%, 연구자/피험자 GAIS 반응률 99.1%/95.6%, 12개월까지 효과 유지였다(2차 보도).</p>
+  <div class="tags"><span class="chip">권역: 미국 · 중국</span><span class="chip">분류: 의료기기 3등급 (PMA / NMPA 3류)</span><span class="chip">근거: 무작위 평가자 맹검 대조 피벗 시험, 회사 보고</span></div>
+  <p class="sowhat"><span class="sw-label">So What</span> 눈밑(티어트로프)이 양대 시장에서 온라벨 적응증이 됐다. 클리닉은 오프라벨 저점도 HA 사용에서 허가 제품으로 이동할 것이며, 경쟁 HA는 눈밑 전용 안전성 데이터가 필요하다.</p>
+  
+  <p class="src">출처: <a href="https://www.prnewswire.com/news-releases/revance-and-teoxane-announce-the-fda-approval-of-rha-redensity-eye-for-undereye-hollowing-302855805.html" target="_blank" rel="noopener">[6] Revance / Teoxane via PR Newswire, 2026-08-20</a> · <a href="https://www.ymguancha.com/post/19622.html" target="_blank" rel="noopener">[7] 医美行业观察, Volbella China approval, 2026-09-10 (secondary)</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔴 높음</span><span class="chip cat">메디컬 에스테틱</span><span class="chip date">2026-08-18</span></div>
+  <h3>종근당바이오 보툴리눔 톡신 CU-20101, 중국 허가 신청</h3>
+  <p class="fact">종근당바이오는 2026-08-18 중화권 라이선시 큐티아 테라퓨틱스(홍콩 상장, 2022년 독점 계약)가 보툴리눔 톡신 A형 CU-20101의 품목허가를 NMPA에 신청했다고 밝혔다. 중국 3상(N=554)은 미간주름 개선에서 보톡스 대비 비열등성을 충족했고 안전성 프로파일은 유사했으며, 중대한 치료 관련 이상반응 없이 반복 투여에서도 효능이 유지됐다. 중국 출시 목표는 2027년 하반기이며 마일스톤 조건은 비공개다(회사 발표의 2차 보도).</p>
+  <div class="tags"><span class="chip">권역: 한국 · 중국</span><span class="chip">분류: 전문의약품 생물학적제제 (보툴리눔 톡신)</span><span class="chip">근거: 3상 비열등성 RCT, N=554, 회사 보고</span></div>
+  <p class="sowhat"><span class="sw-label">So What</span> 또 하나의 한국산 톡신이 중국 심사 대기열에 섰다. 중국 유통사는 가격과 클리닉 도달력으로 협상할 것이므로 파트너는 허가 전에 채널 조건을 확정해야 한다.</p>
+  
+  <p class="src">출처: <a href="https://www.thebionews.net/news/articleView.html?idxno=27272" target="_blank" rel="noopener">[27] 더바이오, 종근당바이오 CU-20101 중국 허가신청, 2026-08-18 (secondary)</a> · <a href="https://www.etoday.co.kr/news/view/2615325" target="_blank" rel="noopener">[28] 이투데이, 종근당바이오 CU-20101 (secondary)</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🟡 중간</span><span class="chip cat">메디컬 에스테틱</span><span class="chip date">2026-08-27</span></div>
+  <h3>일본, 보톡스 비스타의 교근 비대 적응증 추가 승인</h3>
+  <p class="fact">앨러간 에스테틱스(아브비 합동회사)는 2026-08-27 보톡스 비스타 50단위의 효능·효과에 65세 미만 성인의 교근 비대(咬筋膨隆)를 추가하는 일부변경 승인을 발표했다. 미간·눈가 주름 외 일본 최초의 미용 톡신 적응증이다. 개정 첨부문서를 정리한 클리닉 자료는 국내 3상(jRCT2031230467)에서 90일 반응률 40.9%(48U), 39.4%(72U) 대 위약 0%를 인용하며, 반응은 5단계 중증도 척도에서 2단계 이상 개선으로 정의됐다. 회사 보도자료 원문은 직접 확인하지 못했으며 세부 내용은 2차 자료에 근거한다.</p>
+  <div class="tags"><span class="chip">권역: 일본</span><span class="chip">분류: 전문의약품 (보툴리눔 톡신 A형)</span><span class="chip">근거: 3상 위약 대조 RCT, 2차 요약 기준</span></div>
+  <p class="sowhat"><span class="sw-label">So What</span> 일본의 대규모 오프라벨 ‘사각턱 보톡스’ 시장에 온라벨 선택지가 생겨 미허가 수입 톡신을 쓰는 클리닉의 책임 부담이 커졌다. 한국 톡신 업체는 일본 가격 정책과 허가 일정을 재점검해야 한다.</p>
+  <p class="note">신뢰도: 승인과 적응증은 2차 자료 2건으로 교차 확인했으나, 효능 수치는 클리닉의 첨부문서 요약에 근거해 독립 검증되지 않았다.</p>
+  <p class="src">출처: <a href="https://almond.clinic/column/botox/17143/" target="_blank" rel="noopener">[29] Almond Clinic column citing Allergan Aesthetics Japan approval (secondary)</a> · <a href="https://bio.nikkeibp.co.jp/atcl/release/26/08/27/28673/" target="_blank" rel="noopener">[30] Allergan Aesthetics Japan release, hosted by Nikkei BP, 2026-08-27</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔴 높음</span><span class="chip cat">메디컬 에스테틱</span><span class="chip date">2026-09-02</span></div>
+  <h3>주사형 지방분해제 RZL-012, 중국 3상 모든 평가변수 충족</h3>
+  <p class="fact">라지엘 테라퓨틱스와 푸싱제약(JuveStar 경유)은 2026-09-02 중국 턱밑 지방 대상 RZL-012의 무작위 위약 대조 3상 등록 시험 결과를 발표했다. N=480(활성 360/위약 120), 단일 치료 주기, 84일차 주요 반응률 평가변수는 위약 대비 30%p 우위로 충족됐고 모든 2차 효능·안전성 평가변수도 충족됐다. 푸싱은 2026년 말까지 중국 NDA 제출을 계획하며 바디 컨투어링 후속 시험을 준비 중이다. 세부 안전성 데이터는 보도자료에 명시되지 않았다.</p>
+  <div class="tags"><span class="chip">권역: 중국</span><span class="chip">분류: 전문의약품 (NDA 경로)</span><span class="chip">근거: 3상 위약 대조 RCT, N=480, 회사 보고</span></div>
+  <p class="sowhat"><span class="sw-label">So What</span> 중국 비수술 지방 감소 시장이 데옥시콜산에서 차세대 지방분해제로 이동 중이다. 에너지 기반 바디 컨투어링 업체는 1–2회 주사제 대비 경제성 비교를 준비해야 한다.</p>
+  
+  <p class="src">출처: <a href="https://www.prnewswire.com/news-releases/raziel-therapeutics-and-fosun-pharma-announce-positive-phase-3-results-for-rzl-012-in-submental-fat-reduction-clearing-the-path-to-a-china-nda-filing-302867570.html" target="_blank" rel="noopener">[31] Raziel Therapeutics / Fosun Pharma via PR Newswire, 2026-09-02</a></p>
+</article>
+</section>
+<section class="sec" id="deal-kr"><h2><span class="num">5</span>딜·자본·기업</h2>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔴 높음</span><span class="chip cat">딜</span><span class="chip date">2026-09-14</span></div>
+  <h3>푸이그, 더모코스메틱 ISDIN 잔여 50%를 12억 유로에 인수해 100% 보유</h3>
+  <p class="fact">푸이그는 2026-09-14 1990년부터 공동 보유해 온 바르셀로나 더모코스메틱·자외선차단 기업 ISDIN의 CQFE(에스테베) 지분 50% 인수 계약을 발표했다. 2차 보도에 따르면 인수가는 12억 유로로 클로징 시 9억 유로, 2029년 1분기 이연 3억 유로 구조이며, 클로징은 승인 조건부로 2027년 1분기 말 예정이고 언아웃은 공개되지 않았다. 푸이그 회장은 더모코스메틱 확대를 “전략적 우선순위”라고 밝혔다.</p>
+  <div class="tags"><span class="chip">권역: EU</span><span class="chip">분류: 화장품 (EU 1223/2009)</span><span class="chip">구조: 클로징 9억 + 이연 3억 유로 (2차)</span></div>
+  <p class="sowhat"><span class="sw-label">So What</span> 향수 중심 그룹이 약국 채널 선케어 기업의 완전 지배권에 값을 치른 것은 프레스티지 그룹이 지속 가능한 마진을 어디서 보는지 보여준다. 약국·클리닉 유통을 가진 K-더마 브랜드에 새로운 밸류에이션 비교 사례가 생겼다.</p>
+  
+  <p class="src">출처: <a href="https://www.puig.com/en/newsroom/new-chapter-for-isdin-puig-to-assume-full-ownership/" target="_blank" rel="noopener">[10] Puig newsroom, 2026-09-14</a> · <a href="https://www.globalcosmeticsnews.com/puig-takes-full-ownership-of-isdin-in-e1-2-billion-deal/" target="_blank" rel="noopener">[32] Global Cosmetics News, Puig–ISDIN terms (secondary)</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔴 높음</span><span class="chip cat">딜</span><span class="chip date">2026-09-08</span></div>
+  <h3>로레알–코스맥스, 파리에서 공동개발 MOU 체결</h3>
+  <p class="fact">로레알 그룹과 코스맥스는 한·불 수교 140주년 정상회담 계기로 2026-09-08 MOU를 체결했다(2026-09-09 발표). 현장에서 체결된 3건의 비즈니스 MOU 중 하나다. 범위는 글로벌 시장용 K-뷰티 영감 제품 공동 R&amp;D, 화장품 원료·활성 성분 탐색, 한국 뷰티 트렌드에서 착안한 새로운 사용감·제형 개발이다. 서명자는 니콜라 이에로니무스 CEO와 최경 부회장이며 재무 조건은 비공개다. 로레알은 한국 기업과 30년 이상 협력해 왔다고 밝혔다.</p>
+  <div class="tags"><span class="chip">권역: EU · 한국</span><span class="chip">구조: MOU, 재무 조건 없음</span></div>
+  <p class="sowhat"><span class="sw-label">So What</span> 한국 ODM 제형이 세계 최대 뷰티 그룹의 혁신 소스로 공식화됐다. 한국 독립 브랜드는 K-텍스처의 글로벌 복제가 빨라질 것을 예상하고 제형만이 아닌 임상 입증으로 경쟁해야 한다.</p>
+  
+  <p class="src">출처: <a href="https://www.loreal.com/en/news/group/l-oreal-groupe-and-cosmax-sign-memorandum-of-understanding-to-collaborate-on-next-generation-beauty-innovations/" target="_blank" rel="noopener">[11] L'Oréal Groupe newsroom, 2026-09-09</a> · <a href="https://www.cosmax.com/media/cosmax-loreal-group-mou-2026/" target="_blank" rel="noopener">[33] Cosmax media, 2026-09-08</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔴 높음</span><span class="chip cat">딜</span><span class="chip date">2026-08-18</span></div>
+  <h3>CVC, K-뷰티 유통사 실리콘투에 기업가치 21억 달러로 투자</h3>
+  <p class="fact">CVC 아시아는 2026-08-18 상환전환우선주 신주 발행을 통해 실리콘투 지분 약 9%를 기업가치 약 21억 달러에 인수한다고 발표했다. 한국 언론은 신주 규모를 3,000억 원(약 2.15–2.2억 달러)으로 보도했다. 마일스톤이나 구주 매각은 공개되지 않았다. 실리콘투(2002년 설립, 스타일코리안 도매 플랫폼)는 177개국 3,300여 고객사에 600개 이상 브랜드를 유통하며 Boots, 세포라, 얼타, 로스만, 슈퍼드럭, 아이허브를 리테일 파트너로 명시했다. 자금은 글로벌 확장, 공급망 최적화, 조직 전문화에 쓰인다.</p>
+  <div class="tags"><span class="chip">권역: 한국 · 글로벌</span><span class="chip">구조: 신주 약 9%, 상환전환우선주, EV 약 21억 달러</span></div>
+  <p class="sowhat"><span class="sw-label">So What</span> PE 자본을 갖춘 도매상이 한국 브랜드와 서구 리테일 사이에 자리 잡았다. 브랜드는 유통사의 규모가 매대를 결정하기 전에 독점·데이터 공유 조건을 재협상해야 한다.</p>
+  
+  <p class="src">출처: <a href="https://www.cvc.com/media/news/2026/cvc-asia-invests-in-leading-global-distributor-of-k-beauty-products-silicon2/" target="_blank" rel="noopener">[34] CVC Capital Partners, 2026-08-18</a> · <a href="https://en.sedaily.com/news/2026/08/18/silicon2-draws-220-million-from-cvc-capital-to-speed-global" target="_blank" rel="noopener">[35] Seoul Economic Daily (EN), 2026-08-18 (secondary)</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🟡 중간</span><span class="chip cat">딜</span><span class="chip date">2026-09-08</span></div>
+  <h3>로레알 계열 펀드, 중국 CaHA 필러사 末央生物 지분 3.5% 인수</h3>
+  <p class="fact">업계 매체는 2026-09-08 로레알 계열 카세이 창미(凯辉创美) 펀드가 상하이 末央生物(Moreyang) 지분 3.5%를 전략적으로 인수했다고 보도했다. 인수 금액은 비공개다. Moreyang의 CaHA(칼슘 하이드록시아파타이트) 마이크로스피어 필러 Aphranel은 중국 최초 자국 개발 CaHA 안면 연조직 필러 적응증으로 설명되는 NMPA 3류 등록을 보유하며, 첫해 약 15만 유닛을 28개 성·620여 개 인증 기관에 판매했고 2025년 흑자로 보도됐다. 2025년 3월 펀드 출범 이후 스킨케어 브랜드, 제약사에 이은 세 번째 투자다.</p>
+  <div class="tags"><span class="chip">권역: 중국</span><span class="chip">분류: 의료기기, NMPA 3류</span><span class="chip">구조: 소수지분 3.5%, 금액 비공개 (단일 업계 출처)</span></div>
+  <p class="sowhat"><span class="sw-label">So What</span> 최대 스킨케어 그룹이 중국 시술 시장에 자리를 사고 있다. 한국 바이오스티뮬레이터 수출사는 중국 클리닉에서 스킨케어+시술 프로토콜 번들링이 다음 경쟁 전선이 될 것에 대비해야 한다.</p>
+  <p class="note">중국 업계 매체 단일 출처 보도이며 회사 공식 발표는 확인되지 않았다.</p>
+  <p class="src">출처: <a href="https://www.ymguancha.com/post/19617.html" target="_blank" rel="noopener">[12] 医美行业观察, 末央生物 investment, 2026-09-08 (secondary)</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🟡 중간</span><span class="chip cat">딜</span><span class="chip date">2026-09-07</span></div>
+  <h3>MBK파트너스, 기업가치 4,300억 원에 AXIS-Y 지분 40% 인수</h3>
+  <p class="fact">AXIS-Y는 2026-09-07 MBK파트너스가 기업가치 약 4,300억 원에 약 1,720억 원을 투자해 지분 40%를 인수한다고 발표했다. 창업자는 60%와 경영권을 유지하며 회사는 이를 엑시트가 아닌 소수지분 투자로 규정했다. 매출의 90% 이상이 약 100개국 해외에서 발생하며, 대표 제품 다크스팟 코렉팅 글로우 세럼은 누적 2,000만 개 이상 판매됐다. 자금은 유통 확대, 카테고리 확장(헤어케어·디바이스), AI·데이터, 인재 확보에 투입된다.</p>
+  <div class="tags"><span class="chip">권역: 한국</span><span class="chip">분류: 화장품</span><span class="chip">구조: 소수지분 40%, 약 1,720억 원, 마일스톤 비공개</span></div>
+  <p class="sowhat"><span class="sw-label">So What</span> 수출 주도 K-뷰티 DTC 브랜드가 히어로 SKU 경제성만으로 PE 밸류에이션 문턱을 넘고 있다. 창업자는 자본을 유치하기 전 히어로 제품별 단위 경제성을 문서화해야 한다.</p>
+  
+  <p class="src">출처: <a href="https://www.prnewswire.com/news-releases/built-beyond-trends-global-k-beauty-brand-axis-y-enters-its-next-growth-chapter-with-mbk-partners-at-a-krw-430-billion-valuation-302871290.html" target="_blank" rel="noopener">[36] AXIS-Y via PR Newswire, 2026-09-07</a></p>
+</article>
+</section>
+<section class="sec" id="mkt-kr"><h2><span class="num">6</span>시장 &amp; 채널 시그널</h2>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔴 높음</span><span class="chip cat">시장</span><span class="chip date">2026-09-01</span></div>
+  <h3>8월 한국 화장품 수출 13.1억 달러, +52.1%로 8월 기준 최대</h3>
+  <p class="fact">산업통상부 2026년 8월 수출입동향(2026-09-01)에 따르면 화장품 수출은 13.1억 달러로 전년 대비 52.1% 증가했고, 총수출은 982.5억 달러(+68.7%)였다. 업계 매체의 8월 1–25일 관세청 데이터 집계(2차)에 따르면 미국 2.3억 달러(+58.0%), EU 1.3억 달러(+106.6%), 중국 1.2억 달러(+5.3%), CIS 0.6억 달러(+25.9%)였다.</p>
+  <div class="tags"><span class="chip">권역: 한국</span><span class="chip">데이터: 정부 무역 통계</span></div>
+  <p class="sowhat"><span class="sw-label">So What</span> 중국은 한국 수출사에 한 자릿수 초반 성장 시장이 된 반면 EU는 두 배가 됐다. 규제 자료(CPNP, 영국 SCPN) 준비에 대한 자원 배분을 중국 NMPA 신고보다 앞세워야 한다.</p>
+  
+  <p class="src">출처: <a href="https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172145/view" target="_blank" rel="noopener">[1] MOTIE, 2026년 8월 수출입동향 (2026-09-01)</a> · <a href="https://www.cosinkorea.com/news/article.html?no=58205" target="_blank" rel="noopener">[37] 코스인, 8월 화장품 수출 지역별 집계 (secondary)</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔴 높음</span><span class="chip cat">시장</span><span class="chip date">2026-08-31</span></div>
+  <h3>올리브영 외국인 매출 8월 누적 1조 원 돌파; 더마 +78%</h3>
+  <p class="fact">CJ올리브영은 2026-08-31 외국인 고객 오프라인 매출이 2026년 1–8월 누적 1조 원을 넘어 2025년보다 3개월 빨랐다고 밝혔다. 전년 대비 47% 증가, 거래 1,101만 건, 192개국(상위 5개국 미국·싱가포르·일본·중국·태국)이다. 외국인 비중은 오프라인 매출의 33%(2022년 2%)이며, 객단가 기준 평균 6개 구매, 35%는 10만 원 이상 구매했다. 외국인 더마 스킨케어 매출은 약 78% 증가했다.</p>
+  <div class="tags"><span class="chip">권역: 한국</span><span class="chip">데이터: 회사 발표</span></div>
+  <p class="sowhat"><span class="sw-label">So What</span> 올리브영은 세계 최대 K-더마 체험 접점이다. 브랜드는 매장 내 외국인 전환 데이터를 미국·동남아 리테일에 밀어 넣을 SKU를 고르는 선행 지표로 삼아야 한다.</p>
+  
+  <p class="src">출처: <a href="https://corp.oliveyoung.com/ko/news/155?pg=1&amp;category=" target="_blank" rel="noopener">[38] CJ Olive Young newsroom, 2026-08-31</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔴 높음</span><span class="chip cat">시장</span><span class="chip date">2026-09-02</span></div>
+  <h3>세포라, 월간 독점 드롭 방식으로 틱톡샵 파일럿 출시</h3>
+  <p class="fact">세포라는 2026-09-02 2026-09-19부터 미국 틱톡샵 파일럿을 시작한다고 발표했다. 월간 ‘세포라 드롭샵’ 행사에서 크리에이터 콘텐츠와 틱톡 라이브를 통해 큐레이션된 파트너 브랜드 제품을 드롭 기간 동안 틱톡샵에서 독점 판매하고, 일부 품목은 이후 세포라닷컴·일부 매장·다른 리테일 파트너로 확대한다. 결제는 틱톡샵 체크아웃에서 이뤄진다. 세포라는 틱톡에서 월 10억 건 이상의 뷰티 검색이 발생한다고 밝혔다.</p>
+  <div class="tags"><span class="chip">권역: 미국</span><span class="chip">채널: 소셜 커머스</span></div>
+  <p class="sowhat"><span class="sw-label">So What</span> 프레스티지 리테일이 틱톡샵을 런칭 채널로 수용했다. 미국 독점 조건을 협상하는 브랜드는 첫 30일 데이터를 세포라 드롭 창이 가질지 자체 틱톡샵 스토어가 가질지 결정해야 한다.</p>
+  
+  <p class="src">출처: <a href="https://newsroom.sephora.com/sephora-launches-on-tiktok-shop-bringing-a-new-beauty-shopping-experience-to-u-s-customers-with-its-sephora-drop-shop/" target="_blank" rel="noopener">[2] Sephora newsroom, 2026-09-02</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔴 높음</span><span class="chip cat">시장</span><span class="chip date">2026-08-19</span></div>
+  <h3>프로야, 11월 얼타 400개 매장 입점 — C-뷰티 프레스티지 스킨케어 첫 사례</h3>
+  <p class="fact">프로야는 2026-08-19 얼타 뷰티와 파트너십을 맺고 2026년 11월 얼타 400개 매장과 Ulta.com에서 어드밴스드 퍼밍 컬렉션(펩타이드–레티놀)과 오리지널 리페어 컬렉션(장벽 회복·콜라겐 지원 에센스) 2개 라인을 출시한다고 발표했다. 프로야 해외사업 총괄은 이를 수출에서 글로벌 브랜드 구축으로의 전환이자 서유럽에 복제 가능한 모델로 규정했다.</p>
+  <div class="tags"><span class="chip">권역: 미국</span><span class="chip">분류: 화장품</span></div>
+  <p class="sowhat"><span class="sw-label">So What</span> K-더마가 얼타에 만든 ‘장벽 손상 없는 효능’ 매대에 중국 브랜드가 대규모로 들어온다. 한국 브랜드는 11월 매대 재편 전 임상 근거와 가격 구조를 다듬어야 한다.</p>
+  
+  <p class="src">출처: <a href="https://www.tradingview.com/news/prnewswire:8520a832ffd99:0-proya-partners-with-ulta-beauty-joining-the-retailer-s-prestige-skincare-portfolio-later-this-year/" target="_blank" rel="noopener">[4] PROYA press release via PR Newswire, 2026-08-19</a></p>
+</article>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🟡 중간</span><span class="chip cat">시장</span><span class="chip date">2026-09-10</span></div>
+  <h3>타겟, 600여 개 매장에 ‘뷰티 스튜디오’ 개점; K-뷰티 2개 브랜드 데뷔</h3>
+  <p class="fact">타겟은 2026-09-10 600여 개 매장과 온라인에서 ‘타겟 뷰티 스튜디오’를 열었다. 메이크업·스킨케어·헤어케어·향수에 걸쳐 프레스티지·신흥·글로벌 브랜드 90개를 선보이며 다수는 타겟 첫 입점이다. 같은 날 한국 브랜드 성분에디터(스킨케어 29 SKU)와 밀크터치(39 SKU)가 유통사 Olive International을 통해 뷰티 스튜디오 입점을 발표했다.</p>
+  <div class="tags"><span class="chip">권역: 미국</span><span class="chip">채널: 매스-프레스티지 숍인숍</span></div>
+  <p class="sowhat"><span class="sw-label">So What</span> 미국의 두 번째 매스-프레스티지 뷰티 매대가 한국 인디 브랜드에 열렸다. 타겟 제안은 얼타·세포라와 달라야 한다 — 히어로 프레스티지 SKU가 아닌 밸류 티어 디퓨전 라인이다.</p>
+  
+  <p class="src">출처: <a href="https://corporate.target.com/news-features/article/2026/08/target-beauty-studio" target="_blank" rel="noopener">[3] Target corporate newsroom, 2026-09-10</a> · <a href="https://www.prnewswire.com/news-releases/sungboon-editor-and-milk-touch-bring-next-generation-k-beauty-to-target-beauty-studio-302877479.html" target="_blank" rel="noopener">[39] Sungboon Editor / Milk Touch, PR Newswire, 2026-09-10</a></p>
+</article>
+</section>
+<section class="sec spotlight"><h2><span class="num">★</span>스포트라이트 — 미국 매대 재편: 9월 이후 K-뷰티의 자리</h2>
+<article class="item"><p class="fact">한 커버리지 기간 안에 나온 다섯 건의 발표가 미국 뷰티 매대를 다시 그렸다. 세포라는 2026-09-19부터 틱톡샵에서 월간 독점 드롭을 운영하고 <sup class="ref"><a href="#src-2">[2]</a></sup>, 타겟은 90개 브랜드와 한국 데뷔 브랜드 2개를 담은 600개 매장 규모의 뷰티 스튜디오를 열었으며 <sup class="ref"><a href="#src-3">[3]</a></sup><sup class="ref"><a href="#src-39">[39]</a></sup>, 얼타는 중국 최대 자국 뷰티 기업 프로야에 11월부터 400개 매장을 내줬다 <sup class="ref"><a href="#src-4">[4]</a></sup>. 세포라의 올리브영 큐레이션(한국 브랜드 19개)은 2026-08-20 미국 세포라 500여 개 매장에 입점했으며(2026-08-05 발표, 2차) <sup class="ref"><a href="#src-40">[40]</a></sup>, CVC는 K-뷰티 공급의 상당 부분을 담당하는 도매상 실리콘투에 기업가치 21억 달러로 자본을 투입했다 <sup class="ref"><a href="#src-34">[34]</a></sup>. 한편 에스티로더는 아마존 11개 시장 13개 브랜드, 틱톡샵 9개 시장 12개 브랜드를 운영 중이며 FY2026 스킨케어 매출은 73.4억 달러였고 <sup class="ref"><a href="#src-41">[41]</a></sup>, 얼타 2분기 믹스에서 스킨케어·웰니스 비중은 24%로 1%p 하락했다 <sup class="ref"><a href="#src-42">[42]</a></sup>.</p><p class="fact">수요 배경은 견조하다. 8월 1–25일 대미 화장품 수출은 58% 증가했고(관세청 데이터 2차 집계) <sup class="ref"><a href="#src-37">[37]</a></sup>, 올리브영은 외국인 더마 구매가 약 78% 늘었다고 밝혔다 <sup class="ref"><a href="#src-38">[38]</a></sup>. 압박은 물량이 아니라 포지셔닝에 있다. 얼타(프로야 입점), 세포라(올리브영 에디트), 타겟(유통사 경유 인디 K-뷰티) 세 매대가 같은 ‘임상적이되 순한’ 스킨케어 서사를 놓고 경쟁하며, 소셜 채널 하나(틱톡샵)가 그 위에서 런칭 무대로 자리 잡았다.</p><div class="tags"><span class="chip">권역: 미국</span><span class="chip">분류: 화장품</span><span class="chip">근거: 회사 발표 + 정부/관세 통계</span></div><p class="sowhat read">IEUM의 시각: 미국 시장은 K-뷰티를 프레스티지-클리니컬(세포라/얼타), 매스-프레스티지(타겟), 소셜 퍼스트(틱톡샵) 채널 등급으로 분류하고 있으며, 유통사가 등급을 고르게 두는 브랜드는 유통사가 가격을 매기게 된다. IEUM은 프로야가 매대에 오르는 11월 얼타 재편이 미국 프레스티지 스킨케어에서 C-뷰티 대 K-뷰티의 첫 직접 시험대가 될 것으로 본다. 히어로 SKU에 동료심사 또는 기기 측정 임상 데이터를 가진 브랜드는 가격을 지키고, 텍스처와 가격만으로 경쟁하는 브랜드는 타겟급 디퓨전 라인으로 밀릴 것이다. R&amp;D: 미국에서 필요한 클레임(내약성, 장벽, 시술 후)에 맞춰 설계한 히어로 SKU 임상을 연 1건 확보하라. 마케팅: 독점 계약 서명 전에 등급과 첫 30일 채널을 결정하고, 틱톡샵을 재고 처분 채널이 아닌 데이터 채널로 다뤄라.</p><p class="src">출처: <a href="https://newsroom.sephora.com/sephora-launches-on-tiktok-shop-bringing-a-new-beauty-shopping-experience-to-u-s-customers-with-its-sephora-drop-shop/" target="_blank" rel="noopener">[2] Sephora newsroom, 2026-09-02</a> · <a href="https://corporate.target.com/news-features/article/2026/08/target-beauty-studio" target="_blank" rel="noopener">[3] Target corporate newsroom, 2026-09-10</a> · <a href="https://www.prnewswire.com/news-releases/sungboon-editor-and-milk-touch-bring-next-generation-k-beauty-to-target-beauty-studio-302877479.html" target="_blank" rel="noopener">[39] Sungboon Editor / Milk Touch, PR Newswire, 2026-09-10</a> · <a href="https://www.tradingview.com/news/prnewswire:8520a832ffd99:0-proya-partners-with-ulta-beauty-joining-the-retailer-s-prestige-skincare-portfolio-later-this-year/" target="_blank" rel="noopener">[4] PROYA press release via PR Newswire, 2026-08-19</a> · <a href="https://cosmeticsbusiness.com/sephora-olive-young-strategic-k-beauty-partnership-debut" target="_blank" rel="noopener">[40] Cosmetics Business, Sephora × Olive Young US debut (secondary)</a> · <a href="https://www.cvc.com/media/news/2026/cvc-asia-invests-in-leading-global-distributor-of-k-beauty-products-silicon2/" target="_blank" rel="noopener">[34] CVC Capital Partners, 2026-08-18</a> · <a href="https://www.elcompanies.com/en/news-and-media/newsroom/press-releases/2026/08-19-2026-110037466" target="_blank" rel="noopener">[41] The Estée Lauder Companies, FY2026 results, 2026-08-19</a> · <a href="https://www.ulta.com/investor/news-events/press-releases/detail/234/ulta-beauty-announces-second-quarter-fiscal-2026-results" target="_blank" rel="noopener">[42] Ulta Beauty, Q2 FY2026 results, 2026-08-27</a> · <a href="https://www.cosinkorea.com/news/article.html?no=58205" target="_blank" rel="noopener">[37] 코스인, 8월 화장품 수출 지역별 집계 (secondary)</a> · <a href="https://corp.oliveyoung.com/ko/news/155?pg=1&amp;category=" target="_blank" rel="noopener">[38] CJ Olive Young newsroom, 2026-08-31</a> · <a href="https://corp.oliveyoung.com/ko/news/153?pg=1&amp;category=" target="_blank" rel="noopener">[43] CJ Olive Young newsroom, 2026-08-18</a></p></article></section>
+<section class="sec" id="play-kr"><h2><span class="num">7</span>마케팅 플레이북</h2>
+
+<article class="item">
+  <div class="meta"><span class="chip prio">🔵 낮음</span><span class="chip cat">플레이북</span><span class="chip date">2026-09-13</span></div>
+  <h3>케이스: 에스티로더, 20여 개 브랜드에 ‘생성형 엔진 최적화’ 도입</h3>
+  <p class="fact">에스티로더는 2026-09-13 포춘 500대 기업의 16%가 사용하는 AI 가시성 플랫폼 프로파운드와 파트너십을 발표했다. 약 150개 국가·지역에서 에스티로더, 크리니크, 맥, 라메르, 톰포드 등 자사 브랜드가 ChatGPT·Gemini 등 생성형 AI 어시스턴트의 답변에 어떻게 나타나는지 모니터링하고 최적화한다. ELC는 프레스티지 뷰티 최초로 전체 포트폴리오에 이 역량을 글로벌 도입했다고 밝혔고, 최고 디지털·마케팅 책임자는 “사람들이 뷰티를 발견하는 방식이 실시간으로 다시 쓰이고 있다”고 말했다.</p>
+  <div class="tags"><span class="chip">권역: 미국/글로벌</span><span class="chip">교훈: AI 답변 엔진이 발견 채널</span></div>
+  <p class="sowhat"><span class="sw-label">So What</span> AI 어시스턴트는 웹 전반에서 문서화되고 일관되며 입증된 클레임을 노출한다. 규제당국이 원하는 그 클레임 파일이 이제 마케팅 입력값이다. 이번 달 AI 어시스턴트 3곳이 히어로 SKU를 어떻게 설명하는지 점검하고, 광고가 아닌 원천 페이지를 고쳐라.</p>
+  
+  <p class="src">출처: <a href="https://www.businesswire.com/news/home/20260913741575/en/The-Este-Lauder-Companies-Announces-Partnership-with-Profound-to-Expand-AI-Visibility-Across-Its-Global-Brand-Portfolio" target="_blank" rel="noopener">[44] The Estée Lauder Companies via Business Wire, 2026-09-13</a></p>
+</article>
+</section>
+<section class="sec commentary"><h2><span class="num">8</span>IEUM 코멘터리</h2>
+<div class="box">
+<h4>IEUM의 시각 — 섹터 횡단 패턴</h4><ol><li>‘더마’가 전략적 투자자들이 값을 치르는 자산이다. 푸이그는 ISDIN의 완전 지배권을 샀고 <sup class="ref"><a href="#src-10">[10]</a></sup><sup class="ref"><a href="#src-32">[32]</a></sup>, 로레알은 코스맥스를 공동개발 파트너로 공식화하는 동시에 계열 펀드로 중국 시술 제품사 지분을 확보했으며 <sup class="ref"><a href="#src-11">[11]</a></sup><sup class="ref"><a href="#src-12">[12]</a></sup>, 올리브영 외국인 더마 매출은 78% 늘었다 <sup class="ref"><a href="#src-38">[38]</a></sup>. IEUM의 시각: 밸류에이션 프리미엄은 임상 내약성을 입증하고 클리닉·약국에 가까이 있는 브랜드와 ODM에 있다.</li><li>필러에서 적응증별 데이터가 기본 요건이 됐다. 한 달 사이 미국은 중안면·입술·눈밑 HA 제품을 승인했고 <sup class="ref"><a href="#src-5">[5]</a></sup><sup class="ref"><a href="#src-6">[6]</a></sup>, 중국은 눈밑 적응증 확대를 승인했으며 <sup class="ref"><a href="#src-7">[7]</a></sup>, 일본은 톡신에 교근 적응증을 추가했다 <sup class="ref"><a href="#src-29">[29]</a></sup>. IEUM은 2027년 가격 결정이 ‘허가됨’과 ‘이 부위에 허가됨’의 차이로 갈릴 것으로 본다.</li><li>규제 집행이 판매 시점과 항구로 이동하고 있다. FDA는 MoCRA 공지를 틱톡샵 입점과 연결했고 <sup class="ref"><a href="#src-8">[8]</a></sup>, 싱가포르는 수입사·배치 단위로 조치했으며 <sup class="ref"><a href="#src-9">[9]</a></sup>, 인도네시아는 선적 전 검사를 시작했다 <sup class="ref"><a href="#src-16">[16]</a></sup>. IEUM의 시각: 컴플라이언스 문서가 RA 파일이 아니라 채널 진입 서류가 되고 있다.</li><li>중국은 원료를 열고 클레임을 조인다. NMPA가 바쿠치올·NMN을 전체 신고자에게 개방한 <sup class="ref"><a href="#src-13">[13]</a></sup> 같은 기간에 한국은 기능성화장품 심사 규정과 표시·광고 실증 규정 개정안을 행정예고했다(발행 시점 기준 내용은 공개 열람 불가) <sup class="ref"><a href="#src-45">[45]</a></sup><sup class="ref"><a href="#src-46">[46]</a></sup>. IEUM은 원료를 ‘허용’에서 ‘입증’으로 가장 빨리 옮기는 제형사가 승자가 될 것으로 본다.</li></ol>
+<h4>다음 관찰 포인트</h4><ul><li>2026-09-19 — 세포라 드롭샵 틱톡샵 파일럿 시작 <sup class="ref"><a href="#src-2">[2]</a></sup></li><li>2026-09-27 — EU 지침 2024/825의 포괄적 환경 클레임 금지가 화장품에 적용 <sup class="ref"><a href="#src-47">[47]</a></sup></li><li>2026-09-28 — EU 화장품 은(silver) 규정 개정안 의견 마감(G/TBT/N/EU/1227) <sup class="ref"><a href="#src-48">[48]</a></sup></li><li>2026-10-14 / 2026-12-01 — 벨로테로 볼륨(+)·인텐스(+) 미국 출시 <sup class="ref"><a href="#src-5">[5]</a></sup></li><li>2026-10-17 — 인도네시아 화장품 할랄 인증 의무화 발효 <sup class="ref"><a href="#src-17">[17]</a></sup></li><li>2026년 10월 — 화희생물(Bloomage)의 쥬베룩(PDLLA/HA) 중국 출시, 업계 보도 기준 <sup class="ref"><a href="#src-49">[49]</a></sup></li><li>2026년 11월 — 프로야 얼타 400개 매장 입점 <sup class="ref"><a href="#src-4">[4]</a></sup></li><li>2026년 말 — RZL-012 중국 NDA 제출 예정 <sup class="ref"><a href="#src-31">[31]</a></sup>; 2026년 4분기 — EU 부속서 II/III/V 옴니버스 채택 및 영국 비수술 시술 면허제 정부 협의 예상 <sup class="ref"><a href="#src-50">[50]</a></sup></li></ul>
+<h4>권고 및 다음 단계</h4><p>권고: 2026년 4분기를 ‘문서화 분기’로 삼아라. R&amp;D 팀은 (1) 미국에서 내세워야 할 클레임에 맞춰 설계한 히어로 SKU 기기 측정 또는 반안면 시험 1건을 발주하고, (2) 바쿠치올·NMN 지위 확정을 기다리며 보류했던 중국 SKU를 재신고하며, (3) 수출 배치 출하 검사에 금지 색소 스크리닝을 추가해야 한다. 마케팅 팀은 (1) 11월 얼타 재편과 틱톡샵 드롭 전에 미국 채널 등급을 확정하고, (2) 9월 27일 전에 미국·EU 카피에서 ‘FDA 등록’과 포괄적 ‘내추럴/에코’ 표현을 제거하며, (3) AI 어시스턴트가 히어로 SKU를 어떻게 설명하는지 점검해 원천 페이지를 수정해야 한다. 이번 호 지식 공백: 식약처 개정안 2건의 내용은 발행 시점에 공개 열람이 불가했고, 벨로테로와 RHA 리덴시티 아이의 시험 표본 수는 회사가 공개하지 않았다.</p>
+</div></section>
+<section class="sec footer"><h2><span class="num">9</span>면책 고지 및 출처</h2>
+<p class="disc">면책 고지 — 본 뉴스레터는 일반 정보 제공만을 목적으로 하며 법률, 의료, 규제 또는 투자 자문에 해당하지 않습니다. 모든 내용은 본문에 인용된 공개 자료를 바탕으로 작성되었으며, IEUM Value Creator는 해당 자료 이상의 검증을 수행하지 않았고 이를 근거로 한 행위에 대해 책임을 지지 않습니다. 고객 정보나 기밀 정보는 포함되어 있지 않습니다. 상표와 제품명은 각 소유자의 자산입니다. 규제 분류는 커버리지 기간 기준 해당 규제기관의 공개 기록을 반영하며 변경될 수 있습니다.</p>
+<p class="svc">IEUM Value Creator는 에스테틱·코스메슈티컬 기업의 크로스보더 BD, 라이선싱, 시장 진입을 자문합니다. 문의: jayjay@ieumvc.com</p>
+<h4>출처</h4><ol class="sources"><li id="src-1">[1] MOTIE, 2026년 8월 수출입동향 (2026-09-01) — <a href="https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172145/view" target="_blank" rel="noopener">https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172145/view</a></li><li id="src-2">[2] Sephora newsroom, 2026-09-02 — <a href="https://newsroom.sephora.com/sephora-launches-on-tiktok-shop-bringing-a-new-beauty-shopping-experience-to-u-s-customers-with-its-sephora-drop-shop/" target="_blank" rel="noopener">https://newsroom.sephora.com/sephora-launches-on-tiktok-shop-bringing-a-new-beauty-shopping-experience-to-u-s-customers-with-its-sephora-drop-shop/</a></li><li id="src-3">[3] Target corporate newsroom, 2026-09-10 — <a href="https://corporate.target.com/news-features/article/2026/08/target-beauty-studio" target="_blank" rel="noopener">https://corporate.target.com/news-features/article/2026/08/target-beauty-studio</a></li><li id="src-4">[4] PROYA press release via PR Newswire, 2026-08-19 — <a href="https://www.tradingview.com/news/prnewswire:8520a832ffd99:0-proya-partners-with-ulta-beauty-joining-the-retailer-s-prestige-skincare-portfolio-later-this-year/" target="_blank" rel="noopener">https://www.tradingview.com/news/prnewswire:8520a832ffd99:0-proya-partners-with-ulta-beauty-joining-the-retailer-s-prestige-skincare-portfolio-later-this-year/</a></li><li id="src-5">[5] Merz Aesthetics via Business Wire, 2026-09-14 — <a href="https://www.businesswire.com/news/home/20260914841148/en/Merz-Aesthetics-Brings-Comprehensive-BELOTERO-Hyaluronic-Acid-Portfolio-to-U.S.-Market-with-FDA-Approvals-of-BELOTERO-VOLUME-and-BELOTERO-INTENSE-" target="_blank" rel="noopener">https://www.businesswire.com/news/home/20260914841148/en/Merz-Aesthetics-Brings-Comprehensive-BELOTERO-Hyaluronic-Acid-Portfolio-to-U.S.-Market-with-FDA-Approvals-of-BELOTERO-VOLUME-and-BELOTERO-INTENSE-</a></li><li id="src-6">[6] Revance / Teoxane via PR Newswire, 2026-08-20 — <a href="https://www.prnewswire.com/news-releases/revance-and-teoxane-announce-the-fda-approval-of-rha-redensity-eye-for-undereye-hollowing-302855805.html" target="_blank" rel="noopener">https://www.prnewswire.com/news-releases/revance-and-teoxane-announce-the-fda-approval-of-rha-redensity-eye-for-undereye-hollowing-302855805.html</a></li><li id="src-7">[7] 医美行业观察, Volbella China approval, 2026-09-10 (secondary) — <a href="https://www.ymguancha.com/post/19622.html" target="_blank" rel="noopener">https://www.ymguancha.com/post/19622.html</a></li><li id="src-8">[8] FDA, Cosmetics news, 2026-09-09 — <a href="https://www.fda.gov/cosmetics/cosmetics-news-events/fda-clarifies-it-does-not-provide-certificates-or-other-documents-verify-compliance-cosmetic-product" target="_blank" rel="noopener">https://www.fda.gov/cosmetics/cosmetics-news-events/fda-clarifies-it-does-not-provide-certificates-or-other-documents-verify-compliance-cosmetic-product</a></li><li id="src-9">[9] HSA Singapore, recall notice, 2026-08-26/28 — <a href="https://www.hsa.gov.sg/announcements/medicube-pdrn-pink-collagen-capsule-cream--/" target="_blank" rel="noopener">https://www.hsa.gov.sg/announcements/medicube-pdrn-pink-collagen-capsule-cream--/</a></li><li id="src-10">[10] Puig newsroom, 2026-09-14 — <a href="https://www.puig.com/en/newsroom/new-chapter-for-isdin-puig-to-assume-full-ownership/" target="_blank" rel="noopener">https://www.puig.com/en/newsroom/new-chapter-for-isdin-puig-to-assume-full-ownership/</a></li><li id="src-11">[11] L'Oréal Groupe newsroom, 2026-09-09 — <a href="https://www.loreal.com/en/news/group/l-oreal-groupe-and-cosmax-sign-memorandum-of-understanding-to-collaborate-on-next-generation-beauty-innovations/" target="_blank" rel="noopener">https://www.loreal.com/en/news/group/l-oreal-groupe-and-cosmax-sign-memorandum-of-understanding-to-collaborate-on-next-generation-beauty-innovations/</a></li><li id="src-12">[12] 医美行业观察, 末央生物 investment, 2026-09-08 (secondary) — <a href="https://www.ymguancha.com/post/19617.html" target="_blank" rel="noopener">https://www.ymguancha.com/post/19617.html</a></li><li id="src-13">[13] NMPA notice (reprint, CIO Pharma), 2026-08-19 — <a href="https://www.ciopharma.com/supervise/68180" target="_blank" rel="noopener">https://www.ciopharma.com/supervise/68180</a></li><li id="src-14">[14] REACH24H, IECIC addition analysis (secondary) — <a href="https://www.reach24h.com/cosmetic/industry-news/ingredients-catalog-added" target="_blank" rel="noopener">https://www.reach24h.com/cosmetic/industry-news/ingredients-catalog-added</a></li><li id="src-15">[15] HSA Singapore, test-results announcement — <a href="https://www.hsa.gov.sg/announcements/hsa-tests-product-samples-of-medicube-pdrn-pink-collagen-capsule-cream-for-presence-of-sudan-red-dyes/" target="_blank" rel="noopener">https://www.hsa.gov.sg/announcements/hsa-tests-product-samples-of-medicube-pdrn-pink-collagen-capsule-cream-for-presence-of-sudan-red-dyes/</a></li><li id="src-16">[16] ChemLinked, BPJPH Reg. 4/2026 inspection bodies (secondary), 2026-09-10 — <a href="https://cosmetic.chemlinked.com/news/cosmetic-news/indonesia-bpjph-lists-4-bodies-for-halal-pre-shipment-checks" target="_blank" rel="noopener">https://cosmetic.chemlinked.com/news/cosmetic-news/indonesia-bpjph-lists-4-bodies-for-halal-pre-shipment-checks</a></li><li id="src-17">[17] BPJPH Indonesia, halal cosmetics deadline notice — <a href="https://bpjph.halal.go.id/detail/bpjph-produk-kosmetik-wajib-bersertifikat-halal-pada-oktober-2026/" target="_blank" rel="noopener">https://bpjph.halal.go.id/detail/bpjph-produk-kosmetik-wajib-bersertifikat-halal-pada-oktober-2026/</a></li><li id="src-18">[18] MFDS press release, 2026-09-07 — <a href="https://www.mfds.go.kr/brd/m_99/view.do?seq=50328" target="_blank" rel="noopener">https://www.mfds.go.kr/brd/m_99/view.do?seq=50328</a></li><li id="src-19">[19] 이투데이, GCORAS 의장국 선출 (secondary) — <a href="https://www.etoday.co.kr/news/view/2626381" target="_blank" rel="noopener">https://www.etoday.co.kr/news/view/2626381</a></li><li id="src-20">[20] Rohto Pharmaceutical, technology release, 2026-09-08 — <a href="https://www.rohto.co.jp/research/researchnews/technologyrelease/2026/0908_01" target="_blank" rel="noopener">https://www.rohto.co.jp/research/researchnews/technologyrelease/2026/0908_01</a></li><li id="src-21">[21] J Cosmet Dermatol 2026;25(7), DOI 10.1111/jocd.71052 — <a href="https://doi.org/10.1111/jocd.71052" target="_blank" rel="noopener">https://doi.org/10.1111/jocd.71052</a></li><li id="src-22">[22] Dermatology Times, 2026-08-21 (secondary) — <a href="https://www.dermatologytimes.com/view/micro-gauge-needles-with-ldsi-improve-patient-comfort-and-reduce-botulinum-toxin-wastage" target="_blank" rel="noopener">https://www.dermatologytimes.com/view/micro-gauge-needles-with-ldsi-improve-patient-comfort-and-reduce-botulinum-toxin-wastage</a></li><li id="src-23">[23] Amorepacific newsroom, 2026-09-09 — <a href="https://www.apgroup.com/int/ko/news/2026-09-09-1.html" target="_blank" rel="noopener">https://www.apgroup.com/int/ko/news/2026-09-09-1.html</a></li><li id="src-24">[24] Beiersdorf press release, 2026-09-01 — <a href="https://www.beiersdorf.com/newsroom/press-information/all-press-releases/2026/09/01-beiersdorf-strengthens-derma-business-with-microbiome-technology" target="_blank" rel="noopener">https://www.beiersdorf.com/newsroom/press-information/all-press-releases/2026/09/01-beiersdorf-strengthens-derma-business-with-microbiome-technology</a></li><li id="src-25">[25] Cosmax media, 2026-09-11 — <a href="https://www.cosmax.com/media/cosmax-obtained-functional-approval-for-bakuchiol-multi-balm/" target="_blank" rel="noopener">https://www.cosmax.com/media/cosmax-obtained-functional-approval-for-bakuchiol-multi-balm/</a></li><li id="src-26">[26] 코스인, 코스맥스 바쿠치올 멀티밤 기능성 승인 (secondary) — <a href="https://www.cosinkorea.com/news/article.html?no=58287" target="_blank" rel="noopener">https://www.cosinkorea.com/news/article.html?no=58287</a></li><li id="src-27">[27] 더바이오, 종근당바이오 CU-20101 중국 허가신청, 2026-08-18 (secondary) — <a href="https://www.thebionews.net/news/articleView.html?idxno=27272" target="_blank" rel="noopener">https://www.thebionews.net/news/articleView.html?idxno=27272</a></li><li id="src-28">[28] 이투데이, 종근당바이오 CU-20101 (secondary) — <a href="https://www.etoday.co.kr/news/view/2615325" target="_blank" rel="noopener">https://www.etoday.co.kr/news/view/2615325</a></li><li id="src-29">[29] Almond Clinic column citing Allergan Aesthetics Japan approval (secondary) — <a href="https://almond.clinic/column/botox/17143/" target="_blank" rel="noopener">https://almond.clinic/column/botox/17143/</a></li><li id="src-30">[30] Allergan Aesthetics Japan release, hosted by Nikkei BP, 2026-08-27 — <a href="https://bio.nikkeibp.co.jp/atcl/release/26/08/27/28673/" target="_blank" rel="noopener">https://bio.nikkeibp.co.jp/atcl/release/26/08/27/28673/</a></li><li id="src-31">[31] Raziel Therapeutics / Fosun Pharma via PR Newswire, 2026-09-02 — <a href="https://www.prnewswire.com/news-releases/raziel-therapeutics-and-fosun-pharma-announce-positive-phase-3-results-for-rzl-012-in-submental-fat-reduction-clearing-the-path-to-a-china-nda-filing-302867570.html" target="_blank" rel="noopener">https://www.prnewswire.com/news-releases/raziel-therapeutics-and-fosun-pharma-announce-positive-phase-3-results-for-rzl-012-in-submental-fat-reduction-clearing-the-path-to-a-china-nda-filing-302867570.html</a></li><li id="src-32">[32] Global Cosmetics News, Puig–ISDIN terms (secondary) — <a href="https://www.globalcosmeticsnews.com/puig-takes-full-ownership-of-isdin-in-e1-2-billion-deal/" target="_blank" rel="noopener">https://www.globalcosmeticsnews.com/puig-takes-full-ownership-of-isdin-in-e1-2-billion-deal/</a></li><li id="src-33">[33] Cosmax media, 2026-09-08 — <a href="https://www.cosmax.com/media/cosmax-loreal-group-mou-2026/" target="_blank" rel="noopener">https://www.cosmax.com/media/cosmax-loreal-group-mou-2026/</a></li><li id="src-34">[34] CVC Capital Partners, 2026-08-18 — <a href="https://www.cvc.com/media/news/2026/cvc-asia-invests-in-leading-global-distributor-of-k-beauty-products-silicon2/" target="_blank" rel="noopener">https://www.cvc.com/media/news/2026/cvc-asia-invests-in-leading-global-distributor-of-k-beauty-products-silicon2/</a></li><li id="src-35">[35] Seoul Economic Daily (EN), 2026-08-18 (secondary) — <a href="https://en.sedaily.com/news/2026/08/18/silicon2-draws-220-million-from-cvc-capital-to-speed-global" target="_blank" rel="noopener">https://en.sedaily.com/news/2026/08/18/silicon2-draws-220-million-from-cvc-capital-to-speed-global</a></li><li id="src-36">[36] AXIS-Y via PR Newswire, 2026-09-07 — <a href="https://www.prnewswire.com/news-releases/built-beyond-trends-global-k-beauty-brand-axis-y-enters-its-next-growth-chapter-with-mbk-partners-at-a-krw-430-billion-valuation-302871290.html" target="_blank" rel="noopener">https://www.prnewswire.com/news-releases/built-beyond-trends-global-k-beauty-brand-axis-y-enters-its-next-growth-chapter-with-mbk-partners-at-a-krw-430-billion-valuation-302871290.html</a></li><li id="src-37">[37] 코스인, 8월 화장품 수출 지역별 집계 (secondary) — <a href="https://www.cosinkorea.com/news/article.html?no=58205" target="_blank" rel="noopener">https://www.cosinkorea.com/news/article.html?no=58205</a></li><li id="src-38">[38] CJ Olive Young newsroom, 2026-08-31 — <a href="https://corp.oliveyoung.com/ko/news/155?pg=1&amp;category=" target="_blank" rel="noopener">https://corp.oliveyoung.com/ko/news/155?pg=1&amp;category=</a></li><li id="src-39">[39] Sungboon Editor / Milk Touch, PR Newswire, 2026-09-10 — <a href="https://www.prnewswire.com/news-releases/sungboon-editor-and-milk-touch-bring-next-generation-k-beauty-to-target-beauty-studio-302877479.html" target="_blank" rel="noopener">https://www.prnewswire.com/news-releases/sungboon-editor-and-milk-touch-bring-next-generation-k-beauty-to-target-beauty-studio-302877479.html</a></li><li id="src-40">[40] Cosmetics Business, Sephora × Olive Young US debut (secondary) — <a href="https://cosmeticsbusiness.com/sephora-olive-young-strategic-k-beauty-partnership-debut" target="_blank" rel="noopener">https://cosmeticsbusiness.com/sephora-olive-young-strategic-k-beauty-partnership-debut</a></li><li id="src-41">[41] The Estée Lauder Companies, FY2026 results, 2026-08-19 — <a href="https://www.elcompanies.com/en/news-and-media/newsroom/press-releases/2026/08-19-2026-110037466" target="_blank" rel="noopener">https://www.elcompanies.com/en/news-and-media/newsroom/press-releases/2026/08-19-2026-110037466</a></li><li id="src-42">[42] Ulta Beauty, Q2 FY2026 results, 2026-08-27 — <a href="https://www.ulta.com/investor/news-events/press-releases/detail/234/ulta-beauty-announces-second-quarter-fiscal-2026-results" target="_blank" rel="noopener">https://www.ulta.com/investor/news-events/press-releases/detail/234/ulta-beauty-announces-second-quarter-fiscal-2026-results</a></li><li id="src-43">[43] CJ Olive Young newsroom, 2026-08-18 — <a href="https://corp.oliveyoung.com/ko/news/153?pg=1&amp;category=" target="_blank" rel="noopener">https://corp.oliveyoung.com/ko/news/153?pg=1&amp;category=</a></li><li id="src-44">[44] The Estée Lauder Companies via Business Wire, 2026-09-13 — <a href="https://www.businesswire.com/news/home/20260913741575/en/The-Este-Lauder-Companies-Announces-Partnership-with-Profound-to-Expand-AI-Visibility-Across-Its-Global-Brand-Portfolio" target="_blank" rel="noopener">https://www.businesswire.com/news/home/20260913741575/en/The-Este-Lauder-Companies-Announces-Partnership-with-Profound-to-Expand-AI-Visibility-Across-Its-Global-Brand-Portfolio</a></li><li id="src-45">[45] MFDS 행정예고, 기능성화장품 심사에 관한 규정 일부개정고시안, 2026-08-18 — <a href="https://www.mfds.go.kr/brd/m_209/view.do?seq=2180" target="_blank" rel="noopener">https://www.mfds.go.kr/brd/m_209/view.do?seq=2180</a></li><li id="src-46">[46] MFDS 행정예고, 화장품 표시·광고 실증에 관한 규정 일부개정고시안, 2026-08-18 — <a href="https://www.mfds.go.kr/brd/m_209/view.do?seq=2181" target="_blank" rel="noopener">https://www.mfds.go.kr/brd/m_209/view.do?seq=2181</a></li><li id="src-47">[47] CIRS, EU Directive 2024/825 applies 2026-09-27 (secondary) — <a href="http://www.cirs-group.com/en/cosmetics/eu-ecgt-applies-from-september-27-requirements-for-cosmetic-claims-tightened-across-the-board" target="_blank" rel="noopener">http://www.cirs-group.com/en/cosmetics/eu-ecgt-applies-from-september-27-requirements-for-cosmetic-claims-tightened-across-the-board</a></li><li id="src-48">[48] European Commission TBT notification G/TBT/N/EU/1227 — <a href="https://technical-barriers-trade.ec.europa.eu/en/notification/40131" target="_blank" rel="noopener">https://technical-barriers-trade.ec.europa.eu/en/notification/40131</a></li><li id="src-49">[49] 医美行业观察, Bloomage JUVELOOK China launch (secondary) — <a href="https://www.ymguancha.com/post/19626.html" target="_blank" rel="noopener">https://www.ymguancha.com/post/19626.html</a></li><li id="src-50">[50] UK Parliament Women and Equalities Committee, 2026-09-11 — <a href="https://committees.parliament.uk/committee/328/women-and-equalities-committee/news/217824/delays-in-acting-on-highrisk-cosmetic-procedures-is-prolonging-a-significant-risk-to-patient-safety-wec-warns/" target="_blank" rel="noopener">https://committees.parliament.uk/committee/328/women-and-equalities-committee/news/217824/delays-in-acting-on-highrisk-cosmetic-procedures-is-prolonging-a-significant-risk-to-patient-safety-wec-warns/</a></li></ol>
+<p class="colophon">© 2026 IEUM Value Creator · Prepared by IEUM Value Creator · jayjay@ieumvc.com</p>
+</section></div>
+</div>
+<script>
+(function(){
+  function setLang(l){document.body.classList.remove('en','kr');document.body.classList.add(l);
+    document.querySelectorAll('.toggle button').forEach(function(b){b.classList.toggle('on',b.dataset.lang===l)});
+    document.documentElement.lang = (l==='kr'?'ko':'en');}
+  window.setLang=setLang;
+  document.querySelectorAll('.toggle button').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.lang)})});
+  var q=(location.hash||'').replace('#','');
+  setLang(q==='kr'?'kr':'en');
+})();
+</script>
+</body>
+</html>
